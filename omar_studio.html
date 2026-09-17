@@ -1,0 +1,2832 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Omar Studio — حلول ومنتجات رقمية تدفع نمو أعمالك</title>
+<meta name="description" content="مواقع تسويقية، لوحات تحكم، نماذج ذكاء اصطناعي، ومتاجر إلكترونية عالية الأداء — تنفيذ مباشر بإتقان وتكلفة شفافة.">
+
+<!-- Favicon SVG -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2308090c'/%3E%3Ccircle cx='16' cy='16' r='6' fill='%23d8ff63'/%3E%3Cpath d='M10 22 L22 10' stroke='%23d8ff63' stroke-width='2.5' stroke-linecap='round'/%3E%3C/svg%3E">
+
+<!-- Open Graph & Social Sharing Meta -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Omar Studio — Build What Moves Your Business">
+<meta property="og:description" content="High-converting websites, business dashboards, AI prototypes and custom digital systems by Omar Ahmed. Transparent pricing, direct senior engineering.">
+<meta property="og:image" content="meridian_portfolio_cover_a.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Omar Studio — Build What Moves Your Business">
+<meta name="twitter:description" content="Websites, dashboards, AI prototypes & e-commerce built with precision.">
+<meta name="twitter:image" content="meridian_portfolio_cover_a.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@300;400;500;600;700;800&family=DM+Mono:wght@400;500&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #08090c;
+  --bg-subtle: #0f1217;
+  --card: #13171d;
+  --card-hover: #181d24;
+  --card-border: #22272f;
+  --ink: #f2f3ee;
+  --ink-soft: #c8cbd0;
+  --muted: #858b94;
+  --line: #222730;
+  --lime: #d8ff63;
+  --lime-glow: rgba(216, 255, 99, 0.16);
+  --lime-hover: #c4ec4d;
+  --cyan: #78e4ea;
+  --gold: #f2bb68;
+  --red: #ff7c71;
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-pill: 999px;
+  --font-ar: 'Alexandria', sans-serif;
+  --font-en: 'DM Sans', sans-serif;
+  --font-mono: 'DM Mono', monospace;
+  --font-serif: 'Instrument Serif', serif;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-ar);
+  font-size: 15px;
+  line-height: 1.6;
+  overflow-x: hidden;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+}
+
+[lang="en"] body { font-family: var(--font-en); }
+[lang="en"] .serif-title { font-family: var(--font-serif); letter-spacing: -0.04em; }
+[lang="ar"] .serif-title { font-family: var(--font-ar); font-weight: 800; letter-spacing: -0.02em; }
+[lang="en"] .mono-label { font-family: var(--font-mono); }
+[lang="ar"] .mono-label { font-family: var(--font-ar); font-size: 12px; font-weight: 600; }
+
+a { color: inherit; text-decoration: none; }
+button, input, select, textarea { font-family: inherit; }
+
+/* Subtle Noise */
+.noise {
+  position: fixed; inset: 0; pointer-events: none; opacity: 0.04; z-index: 99;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.55'/%3E%3C/svg%3E");
+}
+
+/* Interactive Neural Particle Background */
+#neural-bg {
+  position: fixed; inset: 0; width: 100%; height: 100%;
+  pointer-events: none; z-index: 0; opacity: 0.55;
+}
+body::after {
+  content: ''; position: fixed; inset: 0; z-index: -1; pointer-events: none;
+  background: radial-gradient(circle at 50% 12%, rgba(216, 255, 99, 0.05), transparent 45%),
+              linear-gradient(135deg, rgba(120, 228, 234, 0.02), transparent 50%, rgba(242, 187, 104, 0.02));
+}
+
+/* Header & Nav */
+header.site-header {
+  position: sticky; top: 0; z-index: 90;
+  backdrop-filter: blur(16px);
+  background: rgba(8, 9, 12, 0.88);
+  border-bottom: 1px solid var(--line);
+}
+nav {
+  display: flex; justify-content: space-between; align-items: center;
+  max-width: 1240px; margin: auto; padding: 18px 5vw;
+}
+.logo-area { display: flex; align-items: center; gap: 12px; }
+.brand-mark {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.12em;
+  color: var(--lime);
+  display: flex; align-items: center; gap: 8px;
+}
+.brand-badge {
+  background: rgba(216, 255, 99, 0.15);
+  color: var(--lime);
+  font-size: 10px;
+  padding: 3px 8px;
+  border-radius: var(--radius-pill);
+  border: 1px solid rgba(216, 255, 99, 0.3);
+}
+
+.nav-controls { display: flex; align-items: center; gap: 14px; }
+.nav-links { display: flex; align-items: center; gap: 18px; font-size: 13px; color: var(--muted); }
+.nav-links a { transition: color 0.2s; }
+.nav-links a:hover { color: var(--ink); }
+
+/* Quick Selectors (Currency & Lang) */
+.toggle-group {
+  display: flex; align-items: center;
+  background: #111419;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-pill);
+  padding: 3px;
+  gap: 3px;
+}
+.toggle-btn {
+  background: transparent; border: 0;
+  color: var(--muted);
+  font-size: 11px;
+  padding: 5px 10px;
+  border-radius: var(--radius-pill);
+  cursor: pointer;
+  transition: 0.2s;
+}
+.toggle-btn.active {
+  background: var(--lime);
+  color: #08090c;
+  font-weight: 700;
+}
+
+.nav-cta {
+  background: var(--lime);
+  color: #08090c !important;
+  font-weight: 700;
+  font-size: 12px;
+  padding: 8px 16px;
+  border-radius: var(--radius-pill);
+  transition: 0.2s;
+  display: inline-flex; align-items: center; gap: 6px;
+}
+.nav-cta:hover { background: var(--lime-hover); transform: translateY(-1px); }
+
+/* Container */
+.container { max-width: 1240px; margin: auto; padding: 0 5vw; position: relative; z-index: 1; }
+
+/* Hero Section */
+.hero {
+  padding: 70px 5vw 90px;
+  max-width: 1240px; margin: auto;
+  display: grid; grid-template-columns: 1.25fr 0.85fr;
+  gap: 50px; align-items: center;
+  position: relative; z-index: 1;
+}
+.eyebrow {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: rgba(216, 255, 99, 0.08);
+  border: 1px solid rgba(216, 255, 99, 0.25);
+  color: var(--lime);
+  padding: 6px 14px;
+  border-radius: var(--radius-pill);
+  font-size: 12px;
+  margin-bottom: 24px;
+}
+.eyebrow .live-pulse {
+  width: 7px; height: 7px; border-radius: 50%;
+  background: var(--lime);
+  box-shadow: 0 0 10px var(--lime);
+  animation: pulse 2s infinite;
+}
+@keyframes pulse {
+  0% { transform: scale(0.9); opacity: 0.8; }
+  50% { transform: scale(1.3); opacity: 1; }
+  100% { transform: scale(0.9); opacity: 0.8; }
+}
+
+.hero h1 {
+  font-size: clamp(2.6rem, 5.5vw, 4.8rem);
+  line-height: 1.1;
+  margin-bottom: 24px;
+}
+.hero h1 em {
+  color: var(--lime);
+  font-style: italic;
+  position: relative;
+}
+.hero p.lead {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--ink-soft);
+  max-width: 580px;
+  margin-bottom: 34px;
+}
+.hero-ctas { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 30px; }
+
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  padding: 14px 24px;
+  border-radius: var(--radius-md);
+  font-size: 13px; font-weight: 700;
+  cursor: pointer; transition: all 0.2s ease;
+  border: 1px solid transparent;
+}
+.btn-primary { background: var(--lime); color: #08090c; }
+.btn-primary:hover { background: var(--lime-hover); transform: translateY(-2px); box-shadow: 0 6px 20px rgba(216, 255, 99, 0.25); }
+.btn-secondary { background: #13171e; border-color: var(--card-border); color: var(--ink); }
+.btn-secondary:hover { border-color: var(--lime); color: var(--lime); transform: translateY(-2px); }
+.btn-whatsapp { background: #25D366; color: #fff; border-color: #25D366; }
+.btn-whatsapp:hover { background: #20ba5a; transform: translateY(-2px); box-shadow: 0 6px 20px rgba(37, 211, 102, 0.25); }
+.btn-outline { background: transparent; border: 1px solid var(--line); color: var(--ink); }
+.btn-outline:hover { border-color: var(--gold); color: var(--gold); }
+
+.hero-stats-row {
+  display: flex; gap: 24px; border-top: 1px solid var(--line); padding-top: 20px;
+}
+.hero-stat b { display: block; font-size: 1.3rem; color: var(--lime); font-family: var(--font-mono); }
+.hero-stat span { font-size: 11px; color: var(--muted); }
+
+/* Founder Thumbnail inside Hero Card */
+.founder-box {
+  display: flex; align-items: center; gap: 14px;
+  background: rgba(8, 9, 12, 0.6);
+  border: 1px solid var(--line);
+  padding: 12px 16px; border-radius: var(--radius-md);
+  margin-bottom: 22px;
+}
+.founder-avatar {
+  width: 48px; height: 48px; border-radius: 50%;
+  object-fit: cover; border: 2px solid var(--lime);
+  flex-shrink: 0;
+}
+.founder-info b { font-size: 13px; color: var(--ink); display: block; }
+.founder-info span { font-size: 11px; color: var(--muted); }
+
+/* Hero Side Card */
+.hero-card {
+  background: linear-gradient(165deg, rgba(24, 29, 36, 0.95), rgba(14, 18, 23, 0.95));
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  position: relative;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+.hero-card:before {
+  content: ''; position: absolute; inset: -1px; border-radius: var(--radius-lg);
+  background: linear-gradient(135deg, rgba(216, 255, 99, 0.3), transparent 60%);
+  pointer-events: none; z-index: -1;
+}
+.hero-card-header {
+  display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;
+}
+.slot-badge {
+  font-size: 11px; color: var(--gold); background: rgba(242, 187, 104, 0.1);
+  padding: 4px 10px; border-radius: var(--radius-pill); border: 1px solid rgba(242, 187, 104, 0.25);
+  font-family: var(--font-mono);
+}
+.hero-card h2 { font-size: 1.8rem; line-height: 1.25; margin-bottom: 12px; }
+.hero-card p { font-size: 0.92rem; color: var(--ink-soft); line-height: 1.6; margin-bottom: 22px; }
+
+.reassurance-list { list-style: none; margin-bottom: 24px; }
+.reassurance-list li {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 0.88rem; color: var(--ink-soft);
+  margin-bottom: 10px;
+}
+.reassurance-list li svg { width: 16px; height: 16px; color: var(--lime); flex-shrink: 0; }
+
+.card-response-meta {
+  border-top: 1px solid var(--line); padding-top: 16px;
+  display: flex; justify-content: space-between; align-items: center;
+  font-size: 11px; color: var(--muted);
+}
+
+/* Institutional Credentials & Accreditations Strip */
+.credentials-section {
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  padding: 30px 0;
+  background: rgba(12, 15, 19, 0.6);
+  backdrop-filter: blur(8px);
+}
+.creds-wrap {
+  display: flex; justify-content: space-between; align-items: center;
+  flex-wrap: wrap; gap: 18px;
+}
+.creds-title { font-size: 11px; font-family: var(--font-mono); color: var(--gold); letter-spacing: 0.1em; text-transform: uppercase; }
+.creds-badges { display: flex; gap: 14px; flex-wrap: wrap; }
+.cred-chip {
+  background: #111419; border: 1px solid var(--line);
+  padding: 7px 14px; border-radius: var(--radius-pill);
+  font-size: 11px; color: var(--ink-soft); display: flex; align-items: center; gap: 7px;
+  transition: border-color 0.2s;
+}
+.cred-chip:hover { border-color: var(--lime); }
+.cred-chip span.ico { font-size: 13px; }
+
+/* Sections Common Header */
+section { padding: 85px 0; position: relative; }
+.section-head {
+  display: flex; justify-content: space-between; align-items: flex-end;
+  gap: 30px; border-bottom: 1px solid var(--line);
+  padding-bottom: 22px; margin-bottom: 38px;
+}
+.section-kicker {
+  font-size: 11px; font-family: var(--font-mono); color: var(--gold);
+  letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 8px; display: block;
+}
+.section-head h2 { font-size: clamp(2rem, 3.5vw, 3.2rem); line-height: 1.15; }
+.section-head p.desc { color: var(--muted); max-width: 380px; font-size: 0.95rem; line-height: 1.6; }
+
+/* Filter Tabs for Offers & Works */
+.filter-bar {
+  display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 28px;
+}
+.filter-chip {
+  background: #11141a; border: 1px solid var(--card-border);
+  color: var(--muted); padding: 8px 16px; border-radius: var(--radius-pill);
+  font-size: 12px; cursor: pointer; transition: 0.2s;
+}
+.filter-chip:hover { border-color: var(--lime); color: var(--ink); }
+.filter-chip.active { background: var(--lime); color: #08090c; font-weight: 700; border-color: var(--lime); }
+
+/* Offers Grid */
+.offers-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 20px;
+}
+.offer-card {
+  background: var(--card);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-md);
+  padding: 28px;
+  display: flex; flex-direction: column;
+  transition: transform 0.25s ease, border-color 0.25s ease;
+  position: relative;
+}
+.offer-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(216, 255, 99, 0.4);
+}
+.offer-card.popular {
+  background: linear-gradient(155deg, rgba(216, 255, 99, 0.08), rgba(19, 23, 29, 0.95));
+  border-color: rgba(216, 255, 99, 0.4);
+}
+.offer-card.popular .popular-badge {
+  position: absolute; top: 16px; inset-inline-end: 16px;
+  background: var(--lime); color: #08090c;
+  font-size: 10px; font-weight: 700; padding: 4px 9px;
+  border-radius: var(--radius-pill);
+}
+.offer-lane {
+  font-size: 10px; font-family: var(--font-mono); color: var(--cyan);
+  letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 12px; display: block;
+}
+.offer-card h3 { font-size: 1.35rem; line-height: 1.3; margin-bottom: 10px; }
+.offer-card p.summary { color: var(--muted); font-size: 0.88rem; line-height: 1.55; margin-bottom: 20px; min-height: 42px; }
+
+.offer-price-tag {
+  background: rgba(8, 9, 12, 0.6);
+  border: 1px solid var(--line);
+  padding: 12px 16px; border-radius: var(--radius-sm);
+  display: flex; justify-content: space-between; align-items: baseline;
+  margin-bottom: 22px;
+}
+.offer-price-tag span.label { font-size: 11px; color: var(--muted); }
+.offer-price-tag span.price {
+  font-size: 1.35rem; font-weight: 700; color: var(--lime); font-family: var(--font-mono);
+}
+
+.offer-specs { list-style: none; margin-bottom: 26px; flex-grow: 1; }
+.offer-specs li {
+  display: flex; align-items: flex-start; gap: 8px;
+  font-size: 0.84rem; color: var(--ink-soft);
+  margin-bottom: 9px; line-height: 1.4;
+}
+.offer-specs li:before {
+  content: '✓'; color: var(--lime); font-weight: bold; flex-shrink: 0;
+}
+
+.offer-action-btn {
+  width: 100%;
+  background: transparent;
+  border: 1px solid var(--card-border);
+  color: var(--ink);
+  padding: 12px;
+  border-radius: var(--radius-sm);
+  font-size: 13px; font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+  display: flex; justify-content: center; align-items: center; gap: 8px;
+}
+.offer-action-btn:hover, .offer-card.popular .offer-action-btn {
+  background: var(--lime); color: #08090c; border-color: var(--lime);
+}
+
+/* ========================================================= */
+/* Selected Real Works Showcase (From Portfolio)             */
+/* ========================================================= */
+.works-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 24px;
+}
+.work-card {
+  background: var(--card);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  display: flex; flex-direction: column;
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+.work-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(216, 255, 99, 0.4);
+}
+.work-thumb-wrap {
+  width: 100%; height: 215px; position: relative;
+  background: #0b0e12; overflow: hidden; cursor: zoom-in;
+}
+.work-thumb-wrap img {
+  width: 100%; height: 100%; object-fit: cover; object-position: center top;
+  transition: transform 0.35s ease;
+}
+.work-card:hover .work-thumb-wrap img { transform: scale(1.04); }
+.work-badge {
+  position: absolute; top: 14px; inset-inline-end: 14px;
+  background: rgba(8, 9, 12, 0.85); backdrop-filter: blur(8px);
+  color: var(--lime); border: 1px solid rgba(216, 255, 99, 0.3);
+  font-size: 10px; font-weight: 700; padding: 4px 10px;
+  border-radius: var(--radius-pill); font-family: var(--font-mono);
+}
+.zoom-hint {
+  position: absolute; bottom: 10px; inset-inline-end: 10px;
+  background: rgba(0, 0, 0, 0.6); color: #fff; border-radius: 6px;
+  padding: 4px 8px; font-size: 10px; opacity: 0; transition: opacity 0.2s;
+  pointer-events: none;
+}
+.work-thumb-wrap:hover .zoom-hint { opacity: 1; }
+
+.work-content { padding: 24px; display: flex; flex-direction: column; flex-grow: 1; }
+.work-content h3 { font-size: 1.28rem; margin-bottom: 8px; line-height: 1.3; }
+.work-content p { color: var(--muted); font-size: 0.86rem; line-height: 1.6; margin-bottom: 18px; flex-grow: 1; }
+
+.work-metrics-bar {
+  display: flex; gap: 14px; border-top: 1px solid var(--line);
+  padding-top: 14px; margin-bottom: 16px;
+}
+.w-metric b { font-size: 1.05rem; color: var(--lime); font-family: var(--font-mono); display: block; }
+.w-metric span { font-size: 10px; color: var(--muted); }
+
+.work-links-row {
+  display: flex; gap: 10px; align-items: center; justify-content: flex-start;
+}
+.work-live-btn {
+  display: inline-flex; align-items: center; gap: 5px;
+  padding: 8px 14px; border-radius: var(--radius-sm);
+  background: rgba(216, 255, 99, 0.1); border: 1px solid rgba(216, 255, 99, 0.3);
+  color: var(--lime); font-size: 11px; font-weight: 700; text-decoration: none;
+  transition: 0.2s;
+}
+.work-live-btn:hover { background: var(--lime); color: #08090c; }
+.work-repo-btn {
+  display: inline-flex; align-items: center; gap: 5px;
+  padding: 8px 14px; border-radius: var(--radius-sm);
+  background: #111419; border: 1px solid var(--line);
+  color: var(--ink-soft); font-size: 11px; font-weight: 600; text-decoration: none;
+  transition: 0.2s;
+}
+.work-repo-btn:hover { border-color: var(--gold); color: var(--gold); }
+
+/* ========================================================= */
+/* Interactive Project Configurator / Scope & Cost Tool      */
+/* ========================================================= */
+.configurator-wrap {
+  display: grid; grid-template-columns: 1.15fr 0.85fr;
+  gap: 24px;
+}
+.calc-panel {
+  background: var(--card);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+}
+.calc-panel h3 { font-size: 1.6rem; margin-bottom: 24px; }
+
+.form-group { margin-bottom: 24px; }
+.form-group label.field-label {
+  display: flex; justify-content: space-between; align-items: center;
+  color: var(--ink-soft); font-size: 12px; font-weight: 600;
+  margin-bottom: 10px;
+}
+.field-label span.note { color: var(--muted); font-size: 11px; font-weight: 400; }
+
+.custom-select-wrap { position: relative; }
+select.app-select {
+  width: 100%;
+  background: #0d1015;
+  color: var(--ink);
+  border: 1px solid var(--line);
+  padding: 14px 16px;
+  border-radius: var(--radius-sm);
+  font-size: 14px;
+  appearance: none;
+  cursor: pointer;
+  outline: none;
+  transition: border-color 0.2s;
+}
+select.app-select:focus { border-color: var(--lime); }
+.custom-select-wrap:after {
+  content: '▼'; font-size: 10px; color: var(--muted);
+  position: absolute; inset-inline-end: 16px; top: 50%;
+  transform: translateY(-50%); pointer-events: none;
+}
+
+/* Scale & Tier Grid */
+.tier-pills { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+.tier-pill {
+  background: #0d1015; border: 1px solid var(--line);
+  border-radius: var(--radius-sm); padding: 12px 10px;
+  text-align: center; cursor: pointer; transition: 0.2s;
+}
+.tier-pill input { display: none; }
+.tier-pill:hover { border-color: var(--muted); }
+.tier-pill.selected {
+  background: rgba(216, 255, 99, 0.08);
+  border-color: var(--lime);
+  color: var(--lime);
+}
+.tier-pill .t-name { font-size: 12px; font-weight: 700; display: block; margin-bottom: 4px; }
+.tier-pill .t-desc { font-size: 10px; color: var(--muted); }
+
+/* Add-ons Toggles */
+.addons-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
+@media (max-width: 600px) { .addons-grid { grid-template-columns: 1fr; } }
+.addon-item {
+  background: #0d1015;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  padding: 12px 14px;
+  display: flex; align-items: center; justify-content: space-between;
+  cursor: pointer; transition: 0.2s;
+}
+.addon-item:hover { border-color: var(--muted); }
+.addon-item.checked {
+  border-color: rgba(216, 255, 99, 0.4);
+  background: rgba(216, 255, 99, 0.05);
+}
+.addon-info { display: flex; flex-direction: column; gap: 2px; }
+.addon-title { font-size: 12px; font-weight: 600; color: var(--ink); }
+.addon-cost { font-size: 11px; color: var(--lime); font-family: var(--font-mono); }
+.addon-item input[type="checkbox"] { accent-color: var(--lime); width: 16px; height: 16px; cursor: pointer; }
+
+/* Goal Input */
+input.app-input {
+  width: 100%; background: #0d1015; color: var(--ink);
+  border: 1px solid var(--line); padding: 14px 16px;
+  border-radius: var(--radius-sm); font-size: 13px; outline: none;
+}
+input.app-input:focus { border-color: var(--lime); }
+
+/* Estimate Output Panel */
+.estimate-panel {
+  background: linear-gradient(165deg, rgba(19, 23, 29, 0.98), rgba(12, 15, 19, 0.98));
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  display: flex; flex-direction: column; justify-content: space-between;
+  position: relative;
+}
+.estimate-top-meta { margin-bottom: 24px; }
+.estimate-kicker { font-size: 11px; font-family: var(--font-mono); color: var(--gold); letter-spacing: 0.15em; text-transform: uppercase; }
+.estimate-value-box { margin: 18px 0; }
+.estimate-amount {
+  font-size: clamp(2.4rem, 4vw, 3.6rem);
+  font-family: var(--font-mono);
+  font-weight: 700;
+  color: var(--lime);
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+.estimate-currency-label { font-size: 1rem; color: var(--muted); margin-inline-start: 6px; }
+
+.estimate-breakdown {
+  background: #090c0f; border: 1px solid var(--line);
+  border-radius: var(--radius-sm); padding: 16px; margin-bottom: 24px;
+}
+.breakdown-row {
+  display: flex; justify-content: space-between; align-items: center;
+  font-size: 12px; margin-bottom: 8px; color: var(--muted);
+}
+.breakdown-row:last-child { margin-bottom: 0; padding-top: 8px; border-top: 1px dashed var(--line); color: var(--ink-soft); font-weight: 600; }
+
+.estimate-assurance {
+  font-size: 11px; color: var(--muted); line-height: 1.6; margin-bottom: 24px;
+  border-inline-start: 2px solid var(--lime); padding-inline-start: 12px;
+}
+
+.calc-actions-stack { display: flex; flex-direction: column; gap: 10px; }
+
+/* Comparison Matrix */
+.matrix-wrap {
+  overflow-x: auto; background: var(--card);
+  border: 1px solid var(--card-border); border-radius: var(--radius-md);
+  margin-top: 24px;
+}
+table.matrix-table {
+  width: 100%; border-collapse: collapse; text-align: start; font-size: 13px;
+}
+table.matrix-table th, table.matrix-table td {
+  padding: 16px 20px; border-bottom: 1px solid var(--line);
+}
+table.matrix-table th {
+  background: rgba(8, 9, 12, 0.4); font-size: 12px; color: var(--muted); font-weight: 600;
+}
+table.matrix-table th.highlight { color: var(--lime); font-weight: 700; }
+table.matrix-table tr:hover td { background: rgba(255, 255, 255, 0.015); }
+.check-icon { color: var(--lime); font-weight: bold; }
+.dash-icon { color: var(--line); }
+
+/* Process Steps */
+.process-grid {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px;
+}
+@media (max-width: 900px) { .process-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 550px) { .process-grid { grid-template-columns: 1fr; } }
+.process-step-card {
+  background: var(--card); border: 1px solid var(--card-border);
+  border-radius: var(--radius-md); padding: 24px; position: relative;
+}
+.process-num {
+  font-size: 2.2rem; font-family: var(--font-mono); font-weight: 700;
+  color: var(--gold); line-height: 1; margin-bottom: 14px;
+}
+.process-step-card h3 { font-size: 1.15rem; margin-bottom: 10px; }
+.process-step-card p { font-size: 0.85rem; color: var(--muted); line-height: 1.6; }
+
+/* Proof Grid */
+.proof-metrics {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px;
+}
+@media (max-width: 700px) { .proof-metrics { grid-template-columns: repeat(2, 1fr); } }
+.proof-card {
+  background: var(--card); border: 1px solid var(--card-border);
+  border-radius: var(--radius-md); padding: 24px; text-align: center;
+}
+.proof-card b {
+  display: block; font-size: 2.5rem; font-family: var(--font-mono);
+  color: var(--lime); line-height: 1.1; margin-bottom: 6px;
+}
+.proof-card span { font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; }
+
+/* FAQ Accordion */
+.faq-list { max-width: 860px; margin: auto; display: flex; flex-direction: column; gap: 12px; }
+.faq-item {
+  background: var(--card); border: 1px solid var(--card-border);
+  border-radius: var(--radius-md); overflow: hidden; transition: 0.2s;
+}
+.faq-item.active { border-color: rgba(216, 255, 99, 0.4); }
+.faq-trigger {
+  width: 100%; background: transparent; border: 0;
+  padding: 20px 24px;
+  display: flex; justify-content: space-between; align-items: center;
+  color: var(--ink); font-size: 1rem; font-weight: 600; text-align: start;
+  cursor: pointer; gap: 16px;
+}
+.faq-arrow {
+  width: 20px; height: 20px; border-radius: 50%;
+  background: #191e26; color: var(--lime);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 12px; flex-shrink: 0; transition: transform 0.25s ease;
+}
+.faq-item.active .faq-arrow { transform: rotate(180deg); background: var(--lime); color: #08090c; }
+.faq-answer {
+  max-height: 0; overflow: hidden; transition: max-height 0.3s ease, padding 0.3s ease;
+  padding: 0 24px; color: var(--ink-soft); font-size: 0.92rem; line-height: 1.7;
+}
+.faq-item.active .faq-answer { max-height: 250px; padding: 0 24px 22px 24px; }
+
+/* Final CTA Banner */
+.cta-banner {
+  background: linear-gradient(135deg, rgba(216, 255, 99, 0.12), rgba(15, 18, 23, 0.95));
+  border: 1px solid rgba(216, 255, 99, 0.35);
+  border-radius: var(--radius-lg);
+  padding: 48px;
+  display: flex; justify-content: space-between; align-items: center;
+  gap: 30px;
+}
+@media (max-width: 800px) { .cta-banner { flex-direction: column; text-align: start; align-items: flex-start; } }
+.cta-banner h2 { font-size: clamp(2rem, 3.5vw, 3rem); line-height: 1.2; margin-bottom: 10px; }
+.cta-banner p { color: var(--ink-soft); max-width: 520px; font-size: 1rem; line-height: 1.6; }
+
+/* Footer */
+footer.site-footer {
+  border-top: 1px solid var(--line);
+  padding: 40px 5vw;
+  background: #060709;
+  position: relative; z-index: 1;
+}
+.footer-inner {
+  max-width: 1240px; margin: auto;
+  display: flex; justify-content: space-between; align-items: center;
+  flex-wrap: wrap; gap: 20px;
+  font-size: 12px; color: var(--muted);
+}
+.footer-contacts { display: flex; gap: 18px; flex-wrap: wrap; }
+.footer-contacts a { transition: color 0.2s; }
+.footer-contacts a:hover { color: var(--lime); }
+
+/* Floating Toast Notification */
+.toast-notice {
+  position: fixed; bottom: 85px; inset-inline-end: 24px;
+  background: var(--lime); color: #08090c;
+  font-weight: 700; font-size: 12px;
+  padding: 12px 20px; border-radius: var(--radius-pill);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  transform: translateY(120px); opacity: 0;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  z-index: 999; pointer-events: none;
+  display: flex; align-items: center; gap: 8px;
+}
+.toast-notice.show { transform: translateY(0); opacity: 1; }
+
+/* Mobile Sticky Action Bar */
+.mobile-action-bar {
+  display: none;
+  position: fixed; bottom: 0; left: 0; right: 0;
+  background: rgba(13, 16, 21, 0.95);
+  backdrop-filter: blur(12px);
+  border-top: 1px solid var(--line);
+  padding: 12px 16px;
+  z-index: 85;
+  justify-content: space-between; align-items: center; gap: 10px;
+}
+@media (max-width: 768px) {
+  .mobile-action-bar { display: flex; }
+  body { padding-bottom: 70px; }
+}
+.mobile-action-bar .calc-btn {
+  flex: 1; background: #1a202a; color: var(--ink);
+  border: 1px solid var(--card-border);
+  padding: 10px; border-radius: var(--radius-sm);
+  font-size: 12px; font-weight: 600; text-align: center;
+}
+.mobile-action-bar .wa-btn {
+  flex: 1.4; background: #25D366; color: #fff;
+  padding: 10px; border-radius: var(--radius-sm);
+  font-size: 12px; font-weight: 700; text-align: center;
+  display: flex; align-items: center; justify-content: center; gap: 6px;
+}
+
+/* ========================================================= */
+/* Booking Modal Window                                      */
+/* ========================================================= */
+.modal-overlay {
+  position: fixed; inset: 0; z-index: 2000;
+  background: rgba(4, 5, 7, 0.85);
+  backdrop-filter: blur(8px);
+  display: flex; align-items: center; justify-content: center;
+  padding: 20px; opacity: 0; pointer-events: none;
+  transition: opacity 0.25s ease;
+}
+.modal-overlay.active { opacity: 1; pointer-events: auto; }
+.modal-card {
+  background: #11151c;
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-lg);
+  max-width: 520px; width: 100%;
+  padding: 32px; position: relative;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6);
+  transform: translateY(20px); transition: transform 0.25s ease;
+}
+.modal-overlay.active .modal-card { transform: translateY(0); }
+.modal-close-btn {
+  position: absolute; top: 20px; inset-inline-end: 20px;
+  background: transparent; border: 0; color: var(--muted);
+  font-size: 20px; cursor: pointer; padding: 4px 8px;
+}
+.modal-close-btn:hover { color: var(--ink); }
+.modal-card h3 { font-size: 1.6rem; margin-bottom: 8px; }
+.modal-card p.sub { color: var(--muted); font-size: 0.9rem; margin-bottom: 24px; }
+.modal-form .form-group { margin-bottom: 16px; }
+
+/* Poster Zoom Modal */
+.poster-zoom-overlay {
+  position: fixed; inset: 0; z-index: 2100;
+  background: rgba(4, 5, 8, 0.94);
+  backdrop-filter: blur(10px);
+  display: flex; align-items: center; justify-content: center;
+  padding: 30px 20px; opacity: 0; pointer-events: none;
+  transition: opacity 0.25s ease;
+}
+.poster-zoom-overlay.active { opacity: 1; pointer-events: auto; }
+.poster-zoom-frame {
+  position: relative; max-width: 820px; width: 100%; max-height: 85vh;
+  background: #0e1116; border: 1px solid var(--line); border-radius: var(--radius-md);
+  overflow: hidden; display: flex; flex-direction: column;
+}
+.poster-zoom-img { width: 100%; height: auto; max-height: 75vh; object-fit: contain; }
+.poster-zoom-caption { padding: 14px 20px; font-size: 13px; color: var(--ink-soft); border-top: 1px solid var(--line); background: #08090c; display: flex; justify-content: space-between; align-items: center; }
+
+/* Print Quotation Document Styling (@media print) */
+#formalQuotationSheet { display: none; }
+
+@media print {
+  body { background: #fff !important; color: #111 !important; }
+  .noise, #neural-bg, body::after, header.site-header, .hero, .credentials-section, #offers, #works, #process, section:has(.proof-metrics), #faq, section:has(.cta-banner), footer.site-footer, .mobile-action-bar, .toast-notice, .modal-overlay, .poster-zoom-overlay, .filter-bar, .configurator-wrap {
+    display: none !important;
+  }
+  #formalQuotationSheet {
+    display: block !important;
+    max-width: 800px; margin: 0 auto; padding: 30px;
+    font-family: 'DM Sans', 'Alexandria', sans-serif;
+    color: #111;
+  }
+  .quote-print-header {
+    display: flex; justify-content: space-between; align-items: flex-start;
+    border-bottom: 2px solid #222; padding-bottom: 20px; margin-bottom: 24px;
+  }
+  .quote-print-header h1 { font-size: 22px; font-weight: 800; }
+  .quote-print-meta { font-size: 12px; color: #555; text-align: end; }
+  .print-table { width: 100%; border-collapse: collapse; margin: 24px 0; font-size: 13px; }
+  .print-table th, .print-table td { border: 1px solid #ddd; padding: 10px 14px; }
+  .print-table th { background: #f5f5f5; font-weight: 700; text-align: start; }
+  .print-total-row td { font-size: 16px; font-weight: bold; background: #fafafa; }
+  .print-terms { margin-top: 30px; font-size: 11px; color: #666; border-top: 1px solid #eee; padding-top: 16px; }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 960px) {
+  .hero { grid-template-columns: 1fr; padding-top: 50px; }
+  .configurator-wrap { grid-template-columns: 1fr; }
+  .section-head { flex-direction: column; align-items: flex-start; }
+}
+@media (max-width: 768px) {
+  .nav-links { display: none; }
+}
+</style>
+</head>
+<body>
+
+<canvas id="neural-bg" aria-hidden="true"></canvas>
+<div class="noise"></div>
+
+<!-- Site Header -->
+<header class="site-header">
+  <nav>
+    <div class="logo-area">
+      <a href="#top" class="brand-mark">
+        <span>OMAR STUDIO</span>
+        <span class="brand-badge">2026</span>
+      </a>
+    </div>
+
+    <div class="nav-controls">
+      <div class="nav-links">
+        <a href="#works" data-i18n="nav_works">الأعمال الحية</a>
+        <a href="#offers" data-i18n="nav_offers">الخدمات</a>
+        <a href="#process" data-i18n="nav_process">الآلية</a>
+        <a href="https://github.com/omarahameds2010-lab" target="_blank" rel="noopener" title="GitHub">GitHub ↗</a>
+      </div>
+
+      <!-- Currency Switcher -->
+      <div class="toggle-group" id="currencyGroup" title="اختر العملة / Select Currency">
+        <button class="toggle-btn active" data-cur="EGP">EGP</button>
+        <button class="toggle-btn" data-cur="USD">USD $</button>
+        <button class="toggle-btn" data-cur="SAR">SAR ر.س</button>
+        <button class="toggle-btn" data-cur="AED">AED د.إ</button>
+      </div>
+
+      <!-- Language Switcher -->
+      <div class="toggle-group" id="langGroup" title="تبديل اللغة / Switch Language">
+        <button class="toggle-btn active" data-lang="ar">عربي</button>
+        <button class="toggle-btn" data-lang="en">EN</button>
+      </div>
+
+      <a href="#calculator" class="nav-cta" data-i18n="nav_cta">احسب التكلفة ↵</a>
+    </div>
+  </nav>
+</header>
+
+<!-- Main Content -->
+<main id="top">
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div>
+      <div class="eyebrow">
+        <span class="live-pulse"></span>
+        <span data-i18n="hero_eyebrow">متاح للبدء في مشروعين فقط هذا الشهر</span>
+      </div>
+
+      <h1 class="serif-title" data-i18n="hero_title">
+        ابنِ المنتج الرقمي الذي يجعل العملاء <em>يختارونك فوراً.</em>
+      </h1>
+
+      <p class="lead" data-i18n="hero_desc">
+        أصمم وأطور مواقع تسويقية سريعة، لوحات تحكم للأعمال، متاجر إلكترونية، ونماذج ذكاء اصطناعي تفاعلية — بدون ضبابية شركات التسويق ولا وعود وهمية.
+      </p>
+
+      <div class="hero-ctas">
+        <a href="#calculator" class="btn btn-primary" data-i18n="hero_calc_cta">تشكيل وحساب المشروع فوراً ↵</a>
+        <a href="#works" class="btn btn-secondary" data-i18n="hero_works_cta">معاينة المشاريع الحية</a>
+        <button class="btn btn-outline" id="openBookingModalBtn" data-i18n="hero_book_btn">
+          <span>📅 حجز مكالمة 15 دقيقة</span>
+        </button>
+      </div>
+
+      <div class="hero-stats-row">
+        <div class="hero-stat">
+          <b>21+</b>
+          <span data-i18n="stat_builds">مشروع تم إطلاقه ونشره</span>
+        </div>
+        <div class="hero-stat">
+          <b>Top 5</b>
+          <span data-i18n="stat_comp">مسابقة وطنية للأنظمة الذكية</span>
+        </div>
+        <div class="hero-stat">
+          <b>100%</b>
+          <span data-i18n="stat_ownership">ملكية كاملة للكود والتصميم</span>
+        </div>
+        <div class="hero-stat">
+          <b>&lt; 24h</b>
+          <span data-i18n="stat_response">زمن الرد والتجاوب</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hero Value Card with Founder Thumbnail -->
+    <aside class="hero-card">
+      <div class="hero-card-header">
+        <span class="slot-badge" data-i18n="card_intake">حجز مسبق / جودة تنفيذ هندسية</span>
+        <span style="color:var(--lime); font-size:12px;">● Online</span>
+      </div>
+
+      <!-- Real Human Founder Presentation -->
+      <div class="founder-box">
+        <img src="omar_photo.jpg" alt="Omar Ahmed" class="founder-avatar" onerror="this.style.display='none'">
+        <div class="founder-info">
+          <b data-i18n="founder_title">عمر أحمد — مهندس برمجيات ومؤسس الاستوديو</b>
+          <span data-i18n="founder_status">متاح مباشرة لمناقشة المشروعات والحلول</span>
+        </div>
+      </div>
+
+      <h2 data-i18n="card_headline">شراكة تنفيذ مباشرة، بدون وسطاء.</h2>
+      <p data-i18n="card_text">
+        تتعامل مباشرة مع المهندس المنفذ. لا مدير حسابات ينقل الكلام، ولا تضييع وقت في اجتماعات غير منتجة.
+      </p>
+
+      <ul class="reassurance-list">
+        <li>
+          <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+          <span data-i18n="reassure_1">تسليم على مراحل واضحة مع رابط تجريبي مباشر</span>
+        </li>
+        <li>
+          <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+          <span data-i18n="reassure_2">كود نظيف وموثق وسهل التوسيع مستقبلاً</span>
+        </li>
+        <li>
+          <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+          <span data-i18n="reassure_3">ضمان صيانة مجانية لمدة 30 يوماً بعد الإطلاق</span>
+        </li>
+      </ul>
+
+      <div class="card-response-meta">
+        <span data-i18n="location_meta">القاهرة، مصر · متاح عالمياً عن بعد</span>
+        <span style="color:var(--lime);" data-i18n="turnaround_meta">بدء فوري خلال 48 ساعة</span>
+      </div>
+    </aside>
+  </section>
+
+  <!-- Institutional Credentials Bar -->
+  <div class="credentials-section">
+    <div class="container">
+      <div class="creds-wrap">
+        <div class="creds-title" data-i18n="creds_title">اعتمادات وشهادات موثقة</div>
+        <div class="creds-badges">
+          <div class="cred-chip"><span class="ico">🏛️</span><span>Udacity × MCIT (Digital Egypt Cubs)</span></div>
+          <div class="cred-chip"><span class="ico">🤖</span><span>Dubai Centre for AI (1M Prompters)</span></div>
+          <div class="cred-chip"><span class="ico">💼</span><span>HP LIFE Foundation (AI & Business)</span></div>
+          <div class="cred-chip"><span class="ico">📊</span><span>Coursera (Business Analysis & Process)</span></div>
+          <div class="cred-chip"><span class="ico">🏆</span><span>Top 5 National Competition (IoT Security)</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Selected Work / Live Case Studies Section -->
+  <section id="works" style="background: var(--bg-subtle);">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <span class="section-kicker" data-i18n="works_kicker">01 — نماذج أعمال حية تم تسليمها</span>
+          <h2 class="serif-title" data-i18n="works_title">شاهد جودة التنفيذ في مشاريع حقيقية.</h2>
+        </div>
+        <p class="desc" data-i18n="works_desc">
+          مشاريع حية شحنت بكود حقيقي، وتعمل أمامك الآن بكامل خصائصها. اضغط على أي بطاقة لتجربتها حياً أو فتح الكود.
+        </p>
+      </div>
+
+      <!-- Category Filter for Works -->
+      <div class="filter-bar" id="workFilters">
+        <button class="filter-chip active" data-wfilter="all" data-i18n="wfilter_all">الكل (6 مشاريع)</button>
+        <button class="filter-chip" data-wfilter="ecommerce" data-i18n="wfilter_ecom">متاجر إلكترونية</button>
+        <button class="filter-chip" data-wfilter="web" data-i18n="wfilter_web">منصات ومواقع ويب</button>
+        <button class="filter-chip" data-wfilter="ai" data-i18n="wfilter_ai">ذكاء اصطناعي</button>
+        <button class="filter-chip" data-wfilter="security" data-i18n="wfilter_sec">حماية وأنظمة IoT</button>
+      </div>
+
+      <div class="works-grid" id="worksContainer">
+
+        <!-- 1: Meridian -->
+        <article class="work-card" data-wcat="web ai">
+          <div class="work-thumb-wrap" data-zoom="meridian_portfolio_cover_a.jpg" data-caption="Meridian — Global Market Terminal">
+            <img src="meridian_portfolio_cover_a.jpg" alt="Meridian Global Market Terminal" onerror="this.src='https://lh3.googleusercontent.com/d/1gEI6441WfAdRe5eu7Ar6d41rQtKqhPeX=w1000'">
+            <span class="work-badge">FLAGSHIP / TERMINAL</span>
+            <span class="zoom-hint">تكبير البوستر 🔍</span>
+          </div>
+          <div class="work-content">
+            <h3 data-i18n="work_1_title">Meridian — منصة تحليل الأسواق والبيانات الحية</h3>
+            <p data-i18n="work_1_desc">منصة هندسية لتحليل حركة الأسواق وتغذية المؤشرات اللحظية في واجهة اتخاذ قرار محكمة وسريعة للغاية، قاد عمر هندسة وبناء الواجهة والمعمارية.</p>
+            <div class="work-metrics-bar">
+              <div class="w-metric"><b>0.6s</b><span>زمن الاستجابة</span></div>
+              <div class="w-metric"><b>Live Data</b><span>تغذية بيانات حية</span></div>
+              <div class="w-metric"><b>Team Lead</b><span>قيادة المعمارية</span></div>
+            </div>
+            <div class="work-links-row">
+              <a href="https://omarahameds2010-lab.github.io/MERIDIAN/" target="_blank" rel="noopener" class="work-live-btn" data-i18n="btn_open_live">معاينة النظام لايف ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2: Wave Store -->
+        <article class="work-card" data-wcat="ecommerce web">
+          <div class="work-thumb-wrap" data-zoom="https://lh3.googleusercontent.com/d/1iEf73IqPPy4TIyzpQG4mnAcmJanwoe1n=w1200" data-caption="Wave Streetwear Store (Prado Clothing)">
+            <img src="https://lh3.googleusercontent.com/d/1iEf73IqPPy4TIyzpQG4mnAcmJanwoe1n=w1000" alt="Wave Streetwear Store" onerror="this.style.display='none'">
+            <span class="work-badge">E-COMMERCE / FULL-STACK</span>
+            <span class="zoom-hint">تكبير البوستر 🔍</span>
+          </div>
+          <div class="work-content">
+            <h3 data-i18n="work_2_title">Wave Store — متجر ملابس وأزياء متكامل</h3>
+            <p data-i18n="work_2_desc">منصة تجارة إلكترونية متكاملة لماركة Wave Streetwear (Prado Clothing) شارك عمر في تأسيسها. تشمل واجهة شراء تفاعلية وخادم Node.js وقاعدة بيانات MongoDB Atlas.</p>
+            <div class="work-metrics-bar">
+              <div class="w-metric"><b>Full-Stack</b><span>Node.js + MongoDB</span></div>
+              <div class="w-metric"><b>سلة حية</b><span>Live Cart & Catalog</span></div>
+              <div class="w-metric"><b>براند حقيقي</b><span>Co-founded Brand</span></div>
+            </div>
+            <div class="work-links-row">
+              <a href="https://omarahameds2010-lab.github.io/wave-store/" target="_blank" rel="noopener" class="work-live-btn" data-i18n="btn_open_live">معاينة المتجر لايف ↗</a>
+              <a href="https://github.com/omarahameds2010-lab/wave-store" target="_blank" rel="noopener" class="work-repo-btn">GitHub Repo →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 3: SANAD Arabic RAG -->
+        <article class="work-card" data-wcat="ai">
+          <div class="work-thumb-wrap" data-zoom="https://lh3.googleusercontent.com/d/1N342r5h1KN-enYdOZB-Ga9LeOV3RaPjQ=w1200" data-caption="SANAD — Arabic RAG Evaluation Platform">
+            <img src="https://lh3.googleusercontent.com/d/1N342r5h1KN-enYdOZB-Ga9LeOV3RaPjQ=w1000" alt="SANAD Arabic RAG Platform" onerror="this.style.display='none'">
+            <span class="work-badge">AI / RAG EVALUATION</span>
+            <span class="zoom-hint">تكبير البوستر 🔍</span>
+          </div>
+          <div class="work-content">
+            <h3 data-i18n="work_3_title">SANAD — منصة تقييم أنظمة RAG باللغة العربية</h3>
+            <p data-i18n="work_3_desc">نظام ذكاء اصطناعي رائد للتقييم الموضوعي لنماذج الاسترجاع العربي: تقطيع نصوص واعٍ بالعربية، مقارنة متعددة لنماذج التضمين Embeddings، وقياس دقيق للهدر والهلوسة.</p>
+            <div class="work-metrics-bar">
+              <div class="w-metric"><b>عربي أولاً</b><span>Arabic Chunking</span></div>
+              <div class="w-metric"><b>4 معايير</b><span>Precision/Recall/Hallucination</span></div>
+              <div class="w-metric"><b>Docker</b><span>جاهز للإنتاج</span></div>
+            </div>
+            <div class="work-links-row">
+              <a href="https://github.com/omarahameds2010-lab/sanad-rag" target="_blank" rel="noopener" class="work-live-btn" data-i18n="btn_explore_ai">استكشاف المشروع والكود ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 4: CV Studio -->
+        <article class="work-card" data-wcat="web ai">
+          <div class="work-thumb-wrap" data-zoom="https://lh3.googleusercontent.com/d/1owy7xOOvQRI-UAUadaUdKuzwiAd6wWlS=w1200" data-caption="CV Studio SaaS Platform">
+            <img src="https://lh3.googleusercontent.com/d/1owy7xOOvQRI-UAUadaUdKuzwiAd6wWlS=w1000" alt="CV Studio Platform" onerror="this.style.display='none'">
+            <span class="work-badge">SAAS / NEXT.JS</span>
+            <span class="zoom-hint">تكبير البوستر 🔍</span>
+          </div>
+          <div class="work-content">
+            <h3 data-i18n="work_4_title">CV Studio — منصة SaaS سحابية لبناء السير الذاتية</h3>
+            <p data-i18n="work_4_desc">تطبيق سحابي متكامل بأسلوب SaaS مع معالج خطوات تفاعلي، معاينة فورية جنباً إلى جنب، 6 قوالب احترافية، مساعدة كتابة بالذكاء الاصطناعي، ولوحة لإدارة المستندات.</p>
+            <div class="work-metrics-bar">
+              <div class="w-metric"><b>Next.js</b><span>React & TypeScript</span></div>
+              <div class="w-metric"><b>AI writing</b><span>مساعد صياغة ذكي</span></div>
+              <div class="w-metric"><b>Tailwind</b><span>تصميم سلس ومرن</span></div>
+            </div>
+            <div class="work-links-row">
+              <a href="https://cv-studio-woad-beta.vercel.app/" target="_blank" rel="noopener" class="work-live-btn" data-i18n="btn_open_live">فتح التطبيق الحي ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 5: Medical Clinic -->
+        <article class="work-card" data-wcat="web">
+          <div class="work-thumb-wrap" data-zoom="https://lh3.googleusercontent.com/d/1Knou5MvacYli2dYOOCaOORr_NLo0_H9Q=w1200" data-caption="Medical Clinic Website (Paid Client Work)">
+            <img src="https://lh3.googleusercontent.com/d/1Knou5MvacYli2dYOOCaOORr_NLo0_H9Q=w1000" alt="Medical Clinic Website" onerror="this.style.display='none'">
+            <span class="work-badge">PAID CLIENT / HEALTHCARE</span>
+            <span class="zoom-hint">تكبير البوستر 🔍</span>
+          </div>
+          <div class="work-content">
+            <h3 data-i18n="work_5_title">موقع عيادة طبية متكاملة (عميل حقيقي مدفوع)</h3>
+            <p data-i18n="work_5_desc">أول مشروع تجاري حقيقي مدفوع تم تسليمه بنجاح كامل: واجهة تعريفية للأطباء، استعراض التخصصات، نموذج حجز استشارات، وسرعة استجابة فائقة على الجوال.</p>
+            <div class="work-metrics-bar">
+              <div class="w-metric"><b>100%</b><span>تسليم واعتماد العميل</span></div>
+              <div class="w-metric"><b>موبايل</b><span>توافق كامل مع الشاشات</span></div>
+              <div class="w-metric"><b>سريع جداً</b><span>تحميل في أجزاء من الثانية</span></div>
+            </div>
+            <div class="work-links-row">
+              <a href="https://github.com/omarahameds2010-lab/dr-ahmed-website" target="_blank" rel="noopener" class="work-repo-btn">معاينة تفاصيل المشروع →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 6: Secure Smart Home -->
+        <article class="work-card" data-wcat="security ai">
+          <div class="work-thumb-wrap" data-zoom="https://lh3.googleusercontent.com/d/1QbsMB92pOwZIGmTfq01Ceu5Gr3ZR-h1z=w1200" data-caption="Secure Smart Home Eco-System (Final 5 National Competition)">
+            <img src="https://lh3.googleusercontent.com/d/1QbsMB92pOwZIGmTfq01Ceu5Gr3ZR-h1z=w1000" alt="Secure Smart Home Eco-System" onerror="this.style.display='none'">
+            <span class="work-badge">FINAL 5 / IOT & SECURITY</span>
+            <span class="zoom-hint">تكبير البوستر 🔍</span>
+          </div>
+          <div class="work-content">
+            <h3 data-i18n="work_6_title">منظومة المنزل الذكي المؤمّن (Final 5 على الجمهورية)</h3>
+            <p data-i18n="work_6_desc">مشروع تخرج مبادرة براعم مصر الرقمية المتأهل لأفضل 5 مشاريع على مستوى مصر: خادم Flask REST API، حاسبة استهلاك طاقة، ودائرة أمان بيومترية بنظام منطق العتبة ومبدأ CIA Triad.</p>
+            <div class="work-metrics-bar">
+              <div class="w-metric"><b>Final 5</b><span>مسابقة وطنية</span></div>
+              <div class="w-metric"><b>Flask + IoT</b><span>ESP32 & Python</span></div>
+              <div class="w-metric"><b>CIA Triad</b><span>تأمين سيبراني عالي</span></div>
+            </div>
+            <div class="work-links-row">
+              <a href="https://github.com/omarahameds2010-lab/-smart-home-ecosystem" target="_blank" rel="noopener" class="work-repo-btn">عرض المشروع والكود →</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Offers Catalog Section -->
+  <section id="offers">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <span class="section-kicker" data-i18n="offers_kicker">02 — حزم الخدمات المحددة</span>
+          <h2 class="serif-title" data-i18n="offers_title">اشترِ نتائج أعمال ملموسة، وليس ساعات عمل.</h2>
+        </div>
+        <p class="desc" data-i18n="offers_desc">
+          اختر البداية الأقرب لاحتياجك. يمكنك النقر على أي خدمة لنقلها مباشرة إلى الحاسبة وتخصيص تفاصيلها.
+        </p>
+      </div>
+
+      <!-- Filter Chips -->
+      <div class="filter-bar" id="offerFilters">
+        <button class="filter-chip active" data-filter="all" data-i18n="filter_all">الكل (6)</button>
+        <button class="filter-chip" data-filter="web" data-i18n="filter_web">مواقع وواجهات</button>
+        <button class="filter-chip" data-filter="apps" data-i18n="filter_apps">لوحات وتطبيقات</button>
+        <button class="filter-chip" data-filter="ai" data-i18n="filter_ai">ذكاء اصطناعي وأمان</button>
+      </div>
+
+      <!-- 6 Diverse Offers -->
+      <div class="offers-grid" id="offersContainer">
+
+        <!-- 1: Landing Page -->
+        <article class="offer-card" data-cat="web" data-offer-id="landing">
+          <span class="offer-lane">01 / PRESENCE & SALES</span>
+          <h3 data-i18n="offer_1_title">صفحة هبوط عالية التحويل (Landing Page)</h3>
+          <p class="summary" data-i18n="offer_1_desc">صفحة مبيعات فائقة السرعة مصممة لتحويل الزوار إلى عملاء ومكالمات واتساب بنقرة واحدة.</p>
+          <div class="offer-price-tag">
+            <span class="label" data-i18n="starting_from">يبدأ من</span>
+            <span class="price" data-base="7500" id="cardPriceLanding">7,500 EGP</span>
+          </div>
+          <ul class="offer-specs">
+            <li data-i18n="offer_1_f1">تصميم مخصص فخم يناسب هويتك</li>
+            <li data-i18n="offer_1_f2">سرعة تحميل أقل من ثانية وتوافق جوال 100%</li>
+            <li data-i18n="offer_1_f3">ربط زر واتساب ونموذج تواصل ذكي</li>
+            <li data-i18n="offer_1_f4">تسليم ونشر كامل خلال 7–10 أيام</li>
+          </ul>
+          <button class="offer-action-btn" data-pick="landing" data-i18n="choose_offer">تخصيص هذا العرض ↵</button>
+        </article>
+
+        <!-- 2: Full Corporate Web -->
+        <article class="offer-card popular" data-cat="web" data-offer-id="corporate">
+          <span class="popular-badge" data-i18n="most_requested">الأكثر طلباً للشركات</span>
+          <span class="offer-lane">02 / BRAND & TRUST</span>
+          <h3 data-i18n="offer_2_title">موقع شركة أو براند متكامل</h3>
+          <p class="summary" data-i18n="offer_2_desc">بناء واجهة رقمية متكاملة متعددة الصفحات تبرز خدماتك، سابقة أعمالك، وتبني أقصى درجات الثقة.</p>
+          <div class="offer-price-tag">
+            <span class="label" data-i18n="starting_from">يبدأ من</span>
+            <span class="price" data-base="11000" id="cardPriceCorporate">11,000 EGP</span>
+          </div>
+          <ul class="offer-specs">
+            <li data-i18n="offer_2_f1">حتى 6 صفحات رئيسية (عنا، الخدمات، الأعمال، اتصل بنا)</li>
+            <li data-i18n="offer_2_f2">لوحة إدارة للمحتوى لتعديل النصوص والصور بسهولة</li>
+            <li data-i18n="offer_2_f3">تهيئة كاملة لمحركات البحث (SEO On-Page)</li>
+            <li data-i18n="offer_2_f4">دعم متعدد اللغات مع سرعة استجابة فائقة</li>
+          </ul>
+          <button class="offer-action-btn" data-pick="corporate" data-i18n="choose_offer">تخصيص هذا العرض ↵</button>
+        </article>
+
+        <!-- 3: Dashboard & Operations -->
+        <article class="offer-card" data-cat="apps" data-offer-id="dashboard">
+          <span class="offer-lane">03 / OPERATIONS & CONTROL</span>
+          <h3 data-i18n="offer_3_title">لوحة تحكم وبوابة إدارة أعمال (Dashboard)</h3>
+          <p class="summary" data-i18n="offer_3_desc">وداعاً للشيتات المبعثرة. لوحة تحكم مخصصة لإدارة عملائك، المبيعات، والتقارير بصلاحيات دقيقة.</p>
+          <div class="offer-price-tag">
+            <span class="label" data-i18n="starting_from">يبدأ من</span>
+            <span class="price" data-base="14500" id="cardPriceDashboard">14,500 EGP</span>
+          </div>
+          <ul class="offer-specs">
+            <li data-i18n="offer_3_f1">نظام تسجيل دخول وصلاحيات للموظفين (Roles & Permissions)</li>
+            <li data-i18n="offer_3_f2">رسوم بيانية تفاعلية وتحليلات فورية للبيانات</li>
+            <li data-i18n="offer_3_f3">تصدير تقارير Excel و PDF بضغطة زر</li>
+            <li data-i18n="offer_3_f4">قاعدة بيانات سريعة وآمنة مشفرة</li>
+          </ul>
+          <button class="offer-action-btn" data-pick="dashboard" data-i18n="choose_offer">تخصيص هذا العرض ↵</button>
+        </article>
+
+        <!-- 4: E-Commerce Store -->
+        <article class="offer-card" data-cat="apps" data-offer-id="ecommerce">
+          <span class="offer-lane">04 / DIGITAL COMMERCE</span>
+          <h3 data-i18n="offer_4_title">متجر إلكتروني متكامل (E-Commerce)</h3>
+          <p class="summary" data-i18n="offer_4_desc">متجر مبيعات سريع بتجربة شراء فائقة السلاسة مع بوابات دفع إلكتروني، وإدارة مخزون سهلة.</p>
+          <div class="offer-price-tag">
+            <span class="label" data-i18n="starting_from">يبدأ من</span>
+            <span class="price" data-base="13500" id="cardPriceEcommerce">13,500 EGP</span>
+          </div>
+          <ul class="offer-specs">
+            <li data-i18n="offer_4_f1">سلة شراء وتسجيل سريع (One-Page Checkout)</li>
+            <li data-i18n="offer_4_f2">ربط بوابات دفع (Fawry, Paymob, Stripe, Moyasar)</li>
+            <li data-i18n="offer_4_f3">إشعارات آلية على واتساب عند كل طلب جديد</li>
+            <li data-i18n="offer_4_f4">إدارة مخزون وكوبونات خصم وتتبع الشحن</li>
+          </ul>
+          <button class="offer-action-btn" data-pick="ecommerce" data-i18n="choose_offer">تخصيص هذا العرض ↵</button>
+        </article>
+
+        <!-- 5: AI Sprint -->
+        <article class="offer-card" data-cat="ai" data-offer-id="ai">
+          <span class="offer-lane">05 / INTELLIGENCE & AUTOMATION</span>
+          <h3 data-i18n="offer_5_title">نموذج ذكاء اصطناعي وأتمتة (AI Prototype)</h3>
+          <p class="summary" data-i18n="offer_5_desc">تحويل فكرتك في الذكاء الاصطناعي إلى نموذج عملي وشغال يمكن اختباره وعرضه على المستثمرين في أسبوعين.</p>
+          <div class="offer-price-tag">
+            <span class="label" data-i18n="starting_from">يبدأ من</span>
+            <span class="price" data-base="16000" id="cardPriceAI">16,000 EGP</span>
+          </div>
+          <ul class="offer-specs">
+            <li data-i18n="offer_5_f1">ربط وتخصيص نماذج الذكاء الاصطناعي (Claude, GPT, Gemini)</li>
+            <li data-i18n="offer_5_f2">شات بوت ذكي أو أتمتة معالجة مستندات/بيانات</li>
+            <li data-i18n="offer_5_f3">واجهة استخدام أنيقة وسهلة لغير التقنيين</li>
+            <li data-i18n="offer_5_f4">تسليم الكود مع توثيق تقني وخطة توسع</li>
+          </ul>
+          <button class="offer-action-btn" data-pick="ai" data-i18n="choose_offer">تخصيص هذا العرض ↵</button>
+        </article>
+
+        <!-- 6: Security & Speed Audit -->
+        <article class="offer-card" data-cat="ai" data-offer-id="audit">
+          <span class="offer-lane">06 / PERFORMANCE & SECURITY</span>
+          <h3 data-i18n="offer_6_title">فحص أمان وتسريع أداء (Audit & Speed)</h3>
+          <p class="summary" data-i18n="offer_6_desc">موقعك بطيء أو تقلق من الثغرات؟ فحص برمجي شامل يرفع سرعة الموقع ويسد الثغرات الأمنية مع تقرير مفصل.</p>
+          <div class="offer-price-tag">
+            <span class="label" data-i18n="starting_from">يبدأ من</span>
+            <span class="price" data-base="8500" id="cardPriceAudit">8,500 EGP</span>
+          </div>
+          <ul class="offer-specs">
+            <li data-i18n="offer_6_f1">رفع سرعة الموقع إلى 90+ على مؤشرات Google Core Vitals</li>
+            <li data-i18n="offer_6_f2">فحص ثغرات الخادم وحقن الكود والأمان</li>
+            <li data-i18n="offer_6_f3">ضغط الوسائط وتفعيل التخزين المؤقت CDN</li>
+            <li data-i18n="offer_6_f4">تقرير مفصل قبل وبعد التعديل مع الضمان</li>
+          </ul>
+          <button class="offer-action-btn" data-pick="audit" data-i18n="choose_offer">تخصيص هذا العرض ↵</button>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Project Configurator Section -->
+  <section id="calculator" style="background: var(--bg-subtle);">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <span class="section-kicker" data-i18n="calc_kicker">03 — حاسبة النطاق والتكلفة الفورية</span>
+          <h2 class="serif-title" data-i18n="calc_title">شكّل مشروعك بحرية وشاهد التقدير في ثوانٍ.</h2>
+        </div>
+        <p class="desc" data-i18n="calc_desc">
+          الهدف هو إعطاؤك كامل الشفافية والراحة بدون مفاجآت. اختر ما تريده بالضبط واستلم ملخصاً جاهزاً للإرسال أو الطباعة.
+        </p>
+      </div>
+
+      <div class="configurator-wrap">
+        <!-- Configuration Controls -->
+        <div class="calc-panel">
+          <h3 data-i18n="calc_panel_title">تحديد مواصفات المشروع</h3>
+
+          <!-- Service Type Selection -->
+          <div class="form-group">
+            <label class="field-label">
+              <span data-i18n="field_service_type">نوع المنتج الرقمي المطلوب</span>
+              <span class="note" data-i18n="field_service_note">اختر الأساس</span>
+            </label>
+            <div class="custom-select-wrap">
+              <select id="serviceSelect" class="app-select">
+                <option value="landing" data-base="7500">صفحة هبوط تسويقية (Landing Page)</option>
+                <option value="corporate" data-base="11000" selected>موقع شركة / براند متكامل (Corporate Web)</option>
+                <option value="dashboard" data-base="14500">لوحة تحكم وبوابة أعمال (Business Dashboard)</option>
+                <option value="ecommerce" data-base="13500">متجر إلكتروني متكامل (E-Commerce)</option>
+                <option value="ai" data-base="16000">نموذج أولي ذكاء اصطناعي وأتمتة (AI Prototype)</option>
+                <option value="audit" data-base="8500">فحص أمان وتسريع أداء (Security & Speed)</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Project Tier / Scale -->
+          <div class="form-group">
+            <label class="field-label">
+              <span data-i18n="field_tier">نطاق وحجم المشروع</span>
+              <span class="note" data-i18n="field_tier_note">حجم الخصائص</span>
+            </label>
+            <div class="tier-pills" id="tierGroup">
+              <div class="tier-pill" data-tier="mvp" data-mult="1.0">
+                <span class="t-name" data-i18n="tier_mvp">أساسي / MVP</span>
+                <span class="t-desc" data-i18n="tier_mvp_desc">الميزات الضرورية للبدء</span>
+              </div>
+              <div class="tier-pill selected" data-tier="pro" data-mult="1.35">
+                <span class="t-name" data-i18n="tier_pro">احترافي / Pro</span>
+                <span class="t-desc" data-i18n="tier_pro_desc">نمو وتوسع كامل</span>
+              </div>
+              <div class="tier-pill" data-tier="enterprise" data-mult="1.8">
+                <span class="t-name" data-i18n="tier_enterprise">مخصص / Custom</span>
+                <span class="t-desc" data-i18n="tier_enterprise_desc">ميزات دقيقة ومعقدة</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline -->
+          <div class="form-group">
+            <label class="field-label">
+              <span data-i18n="field_timeline">الجدول الزمني وسرعة الإنجاز</span>
+              <span class="note" data-i18n="field_timeline_note">حسب أولوياتك</span>
+            </label>
+            <div class="custom-select-wrap">
+              <select id="timelineSelect" class="app-select">
+                <option value="1.2" data-weeks="1–2">تسليم عاجل ومكثف (1–2 أسبوع) [+20%]</option>
+                <option value="1.0" data-weeks="2–4" selected>جدول قياسي متزن (2–4 أسابيع) [الأفضل]</option>
+                <option value="0.95" data-weeks="4–7">تسليم مرحلي مريح (4–7 أسابيع) [-5%]</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Granular Add-ons -->
+          <div class="form-group">
+            <label class="field-label">
+              <span data-i18n="field_addons">إضافات وتكاملات اختيارية</span>
+              <span class="note" data-i18n="field_addons_note">فعل ما تحتاجه فقط</span>
+            </label>
+            <div class="addons-grid">
+              <!-- Addon 1 -->
+              <label class="addon-item">
+                <div class="addon-info">
+                  <span class="addon-title" data-i18n="addon_brand">هوية بصرية وتصميم مخصص</span>
+                  <span class="addon-cost" data-cost="2000">+2,000 EGP</span>
+                </div>
+                <input type="checkbox" id="addBrand" data-cost="2000">
+              </label>
+
+              <!-- Addon 2 -->
+              <label class="addon-item">
+                <div class="addon-info">
+                  <span class="addon-title" data-i18n="addon_lang">دعم لغتين (عربي + إنجليزي)</span>
+                  <span class="addon-cost" data-cost="1500">+1,500 EGP</span>
+                </div>
+                <input type="checkbox" id="addLang" data-cost="1500" checked>
+              </label>
+
+              <!-- Addon 3 -->
+              <label class="addon-item">
+                <div class="addon-info">
+                  <span class="addon-title" data-i18n="addon_pay">ربط بوابات دفع إلكتروني</span>
+                  <span class="addon-cost" data-cost="2500">+2,500 EGP</span>
+                </div>
+                <input type="checkbox" id="addPay" data-cost="2500">
+              </label>
+
+              <!-- Addon 4 -->
+              <label class="addon-item">
+                <div class="addon-info">
+                  <span class="addon-title" data-i18n="addon_seo">تهيئة محركات بحث (SEO) فائقة</span>
+                  <span class="addon-cost" data-cost="1800">+1,800 EGP</span>
+                </div>
+                <input type="checkbox" id="addSeo" data-cost="1800">
+              </label>
+
+              <!-- Addon 5 -->
+              <label class="addon-item">
+                <div class="addon-info">
+                  <span class="addon-title" data-i18n="addon_ai">مساعد ذكي AI / Chatbot مدمج</span>
+                  <span class="addon-cost" data-cost="3200">+3,200 EGP</span>
+                </div>
+                <input type="checkbox" id="addAi" data-cost="3200">
+              </label>
+
+              <!-- Addon 6 -->
+              <label class="addon-item">
+                <div class="addon-info">
+                  <span class="addon-title" data-i18n="addon_care">دعم وصيانة وضمان شهري</span>
+                  <span class="addon-cost" data-cost="2000">+2,000 EGP/شهر</span>
+                </div>
+                <input type="checkbox" id="addCare" data-cost="2000">
+              </label>
+            </div>
+          </div>
+
+          <!-- Goal input -->
+          <div class="form-group" style="margin-bottom:0;">
+            <label class="field-label">
+              <span data-i18n="field_goal">ما الهدف الأهم الذي تريد تحقيقه من هذا البناء؟</span>
+              <span class="note" data-i18n="field_goal_note">اختياري</span>
+            </label>
+            <input type="text" id="projectGoal" class="app-input" placeholder="مثال: مضاعفة المبيعات، أتمتة إدارة العملاء، إبهار المستثمرين...">
+          </div>
+        </div>
+
+        <!-- Output Estimate & Action Card -->
+        <div class="estimate-panel">
+          <div>
+            <div class="estimate-top-meta">
+              <span class="estimate-kicker" data-i18n="est_kicker">تقدير الاستثمار المتوقع</span>
+              <div class="estimate-value-box">
+                <span class="estimate-amount" id="totalEstimateVal">17,850</span>
+                <span class="estimate-currency-label" id="currentCurrencyLabel">EGP</span>
+              </div>
+            </div>
+
+            <!-- Breakdown Detail Box -->
+            <div class="estimate-breakdown">
+              <div class="breakdown-row">
+                <span data-i18n="row_base">الخدمة المختارة:</span>
+                <span id="breakdownService" style="color:var(--ink);">موقع شركة متكامل</span>
+              </div>
+              <div class="breakdown-row">
+                <span data-i18n="row_tier">مستوى النطاق:</span>
+                <span id="breakdownTier">احترافي (x1.35)</span>
+              </div>
+              <div class="breakdown-row">
+                <span data-i18n="row_time">المدة المقدرة:</span>
+                <span id="breakdownTime">2–4 أسابيع</span>
+              </div>
+              <div class="breakdown-row">
+                <span data-i18n="row_addons">الإضافات المفعلة:</span>
+                <span id="breakdownAddonsCount">1 إضافة مختارة</span>
+              </div>
+              <div class="breakdown-row">
+                <span data-i18n="row_total">التقدير النهائي الشفاف:</span>
+                <span id="breakdownTotal" style="color:var(--lime);">17,850 EGP</span>
+              </div>
+            </div>
+
+            <div class="estimate-assurance" data-i18n="est_assurance">
+              هذا التقدير استرشادي شفاف لتسهيل المحادثة الأولى. الدفع على مرحلتين (50% عند البدء و50% بعد التسليم والاختبار)، مع كود ملكك بالكامل 100%.
+            </div>
+          </div>
+
+          <!-- Practical Action Buttons -->
+          <div class="calc-actions-stack">
+            <button class="btn btn-whatsapp" id="sendBriefWhatsapp" style="width:100%;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.06-2.128-.538-1.503-.626-2.529-2.164-2.607-2.27-.078-.106-.615-.818-.615-1.56 0-.742.39-1.107.528-1.259.138-.152.3-.19.4-.19.102 0 .204.001.293.006.095.004.22-.036.345.263.129.309.439 1.07.478 1.149.039.078.064.17.013.272-.051.102-.078.165-.155.253-.078.089-.164.198-.234.266-.079.076-.162.158-.07.316.092.158.409.675.877 1.092.602.536 1.11.703 1.268.782.158.079.251.069.344-.039.093-.108.397-.463.504-.622.107-.158.214-.132.357-.079.144.053.91.429 1.066.507.156.079.26.118.298.184.038.067.038.388-.106.793z"/></svg>
+              <span data-i18n="btn_send_wa">إرسال هذا الملخص مباشرة على واتساب ↵</span>
+            </button>
+
+            <button class="btn btn-secondary" id="copySummaryBtn" style="width:100%;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+              <span data-i18n="btn_copy_brief">نسخ ملخص المشروع للحافظة</span>
+            </button>
+
+            <div style="display:grid; grid-template-columns: 1fr 1fr; gap:10px;">
+              <button class="btn btn-outline" id="printQuoteBtn" style="font-size:12px; padding:10px;">
+                <span>📄 طباعة / تنزيل العرض (PDF)</span>
+              </button>
+              <button class="btn btn-outline" id="calcOpenModalBtn" style="font-size:12px; padding:10px;">
+                <span>📅 حجز مكالمة 15 دقيقة</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Feature Comparison Matrix -->
+      <div style="margin-top: 48px;">
+        <h4 style="font-size: 1.2rem; margin-bottom: 16px;" data-i18n="matrix_title">ماذا يتضمن كل خيار؟ (مقارنة سريعة)</h4>
+        <div class="matrix-wrap">
+          <table class="matrix-table">
+            <thead>
+              <tr>
+                <th data-i18n="col_feat">الميزة / المعيار</th>
+                <th>أساسي (MVP)</th>
+                <th class="highlight">احترافي (Pro)</th>
+                <th>مخصص (Enterprise)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-i18n="row_m_design">التصميم وتجربة المستخدم (UI/UX)</td>
+                <td data-i18n="m_d_1">تصميم مخصص سريع</td>
+                <td class="check-icon" data-i18n="m_d_2">تصميم متكامل ونظام مكونات فخم</td>
+                <td class="check-icon" data-i18n="m_d_3">هوية رقمية وأنيميشن تفاعلي دقيق</td>
+              </tr>
+              <tr>
+                <td data-i18n="row_m_speed">سرعة التحميل والتوافق</td>
+                <td class="check-icon">✓ سرعة عالية</td>
+                <td class="check-icon">✓ Core Web Vitals 90+</td>
+                <td class="check-icon">✓ Core Web Vitals 95+ و CDN عالمي</td>
+              </tr>
+              <tr>
+                <td data-i18n="row_m_cms">لوحة التحكم وإدارة المحتوى</td>
+                <td class="dash-icon">—</td>
+                <td class="check-icon">✓ لوحة تحكم سهلة</td>
+                <td class="check-icon">✓ لوحة متقدمة بصلاحيات متعددة</td>
+              </tr>
+              <tr>
+                <td data-i18n="row_m_revisions">جولات المراجعة والتعديل</td>
+                <td>جولة مراجعة واحدة</td>
+                <td class="check-icon">3 جولات مراجعة</td>
+                <td class="check-icon">مراجعات غير محدودة حتى الاعتماد</td>
+              </tr>
+              <tr>
+                <td data-i18n="row_m_warranty">الضمان والدعم بعد الإطلاق</td>
+                <td>14 يوماً مجاناً</td>
+                <td class="check-icon">30 يوماً مجاناً</td>
+                <td class="check-icon">60 يوماً مع تدريب كامل لفريقك</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Process Section -->
+  <section id="process">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <span class="section-kicker" data-i18n="process_kicker">04 — آلية العمل الواضحة</span>
+          <h2 class="serif-title" data-i18n="process_title">وضوح تام في كل خطوة، بدون مفاجآت.</h2>
+        </div>
+        <p class="desc" data-i18n="process_desc">
+          يمر كل مشروع بـ 4 خطوات محددة سلفاً، لتعرف دائماً ما الذي يجري ومتى تستلم كل جزء.
+        </p>
+      </div>
+
+      <div class="process-grid">
+        <div class="process-step-card">
+          <div class="process-num">01</div>
+          <h3 data-i18n="step_1_title">التوضيح والاستكشاف (Clarify)</h3>
+          <p data-i18n="step_1_desc">مكالمة مركزة 20 دقيقة نحدد فيها العميل المستهدف، النتيجة المطلوبة، ونستبعد الحشو غير المجدي.</p>
+        </div>
+
+        <div class="process-step-card">
+          <div class="process-num">02</div>
+          <h3 data-i18n="step_1_title_2">التأطير والتصميم (Frame)</h3>
+          <p data-i18n="step_2_desc">تحويل الفكرة إلى نطاق عمل محدد وبروتوتايب تفاعلي تشاهده وتوافق عليه قبل كتابة الكود.</p>
+        </div>
+
+        <div class="process-step-card">
+          <div class="process-num">03</div>
+          <h3 data-i18n="step_3_title">البناء والاختبار (Build)</h3>
+          <p data-i18n="step_3_desc">تطوير الكود النظيف، ربط البيانات، الاختبار على مختلف الشاشات مع تحديثات أسبوعية مرئية.</p>
+        </div>
+
+        <div class="process-step-card">
+          <div class="process-num">04</div>
+          <h3 data-i18n="step_4_title">التسليم والمفاتيح (Handover)</h3>
+          <p data-i18n="step_4_desc">نقل الدومين والاستضافة، تسليم الكود في مستودع GitHub خاص بك، وفيديو شرح مصور لكيفية الإدارة.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Social Proof & Trust Section -->
+  <section style="background: var(--bg-subtle);">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <span class="section-kicker" data-i18n="proof_kicker">05 — لماذا يثق بنا العملاء</span>
+          <h2 class="serif-title" data-i18n="proof_title">استثمار مضمون يعود عليك بنتائج حقيقية.</h2>
+        </div>
+        <p class="desc" data-i18n="proof_desc">
+          أنت لا تدفع مقابل قالب جاهز؛ أنت تشتري شريكاً تقنياً يفهم في نمو الأعمال ويشرح كل قرار برمجياً وتجارياً.
+        </p>
+      </div>
+
+      <div class="proof-metrics">
+        <div class="proof-card">
+          <b>21+</b>
+          <span data-i18n="proof_card_1">مشروع رقمي تم تسليمه</span>
+        </div>
+        <div class="proof-card">
+          <b>100%</b>
+          <span data-i18n="proof_card_2">التزام بمواعيد التسليم</span>
+        </div>
+        <div class="proof-card">
+          <b>0</b>
+          <span data-i18n="proof_card_3">أي تكاليف خفية مستترة</span>
+        </div>
+        <div class="proof-card">
+          <b>24h</b>
+          <span data-i18n="proof_card_4">أقصى وقت للرد والدعم</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive FAQ Section -->
+  <section id="faq">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <span class="section-kicker" data-i18n="faq_kicker">06 — الأسئلة الشائعة وتطمين العميل</span>
+          <h2 class="serif-title" data-i18n="faq_title">كل ما يدور في ذهنك، بإجابات واضحة.</h2>
+        </div>
+        <p class="desc" data-i18n="faq_desc">
+          إليك أكثر الأسئلة التي يطرحها العملاء قبل البدء، لتكون مطمئناً لكل تفصيلة.
+        </p>
+      </div>
+
+      <div class="faq-list">
+        <!-- FAQ 1 -->
+        <div class="faq-item active">
+          <button class="faq-trigger">
+            <span data-i18n="faq_q1">كيف تسير آلية الدفع وتقسيم الأقساط؟</span>
+            <span class="faq-arrow">▼</span>
+          </button>
+          <div class="faq-answer" data-i18n="faq_a1">
+            تسير الدفعات بأمان وشفافية تامة: 50% دفعة أولى لبدء المشروع وحجز النطاق والجدول الزمني، و 50% الباقية فقط بعد مراجعة الموقع على الرابط التجريبي والتأكد من مطابقته لكافة متطلباتك واعتماده رسمياً.
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="faq-item">
+          <button class="faq-trigger">
+            <span data-i18n="faq_q2">هل أمتلك الكود والتصميم بنسبة 100% بعد الانتهاء؟</span>
+            <span class="faq-arrow">▼</span>
+          </button>
+          <div class="faq-answer" data-i18n="faq_a2">
+            نعم، بنسبة 100% وبلا استثناء. يتم تسليمك مستودع الكود الكامل (GitHub repo)، ملفات التصميم، وحسابات الاستضافة والدومين. لا توجد أي قيود أو اشتراكات احتكارية تربطك بي مستقبلاً.
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="faq-item">
+          <button class="faq-trigger">
+            <span data-i18n="faq_q3">ماذا لو أردت تعديلات أثناء العمل أو بعد الإطلاق؟</span>
+            <span class="faq-arrow">▼</span>
+          </button>
+          <div class="faq-answer" data-i18n="faq_a3">
+            كل مشروع يتضمن جولات مراجعة مخصصة لضمان رضاك التام عن التصميم والوظائف. بالإضافة إلى ذلك، يشمل كل مشروع ضمان صيانة مجانية لمدة 30 يوماً بعد الإطلاق لإصلاح أي ملاحظات برمجية فوراً.
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="faq-item">
+          <button class="faq-trigger">
+            <span data-i18n="faq_q4">لدي فكرة غير مكتملة أو تفاصيل غير منظمة، هل يمكن البدء؟</span>
+            <span class="faq-arrow">▼</span>
+          </button>
+          <div class="faq-answer" data-i18n="faq_a4">
+            هذا هو الوضع الطبيعي لمعظم أصحاب الأعمال! ليس مطلوباً منك كتابة مواصفات تقنية معقدة؛ فقرة واحدة أو محادثة صوتية عبر واتساب كافية تماماً لنبدأ في صياغة الفكرة وتحويلها إلى نطاق عمل تقني واضح خطوة بخطوة.
+          </div>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="faq-item">
+          <button class="faq-trigger">
+            <span data-i18n="faq_q5">كيف سنتابع سير العمل خطوة بخطوة؟</span>
+            <span class="faq-arrow">▼</span>
+          </button>
+          <div class="faq-answer" data-i18n="faq_a5">
+            نفتح قناة تواصل مباشرة (واتساب أو سلاك)، مع رابط Staging تجريبي يتم تحديثه أسبوعياً لترى المشروع وهو يتشكل أمام عينيك وتجربه بنفسك على هاتفك.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA Section -->
+  <section style="background: var(--bg-subtle);">
+    <div class="container">
+      <div class="cta-banner">
+        <div>
+          <span class="section-kicker" data-i18n="final_kicker">الخطوة العملية القادمة</span>
+          <h2 class="serif-title" data-i18n="final_title">هات فكرتك كما هي.. ودعنا نبسطها ونبنيها.</h2>
+          <p data-i18n="final_desc">
+            فقرة واحدة تكفي. سأساعدك في تحويلها إلى خطوة أولى قابلة للتنفيذ السريع بدون أي التزام مالي.
+          </p>
+        </div>
+        <div style="display:flex; gap:12px; flex-wrap:wrap;">
+          <a href="#calculator" class="btn btn-primary" data-i18n="final_calc_cta">احسب التكلفة وشكّل طلبك ↵</a>
+          <button class="btn btn-whatsapp" id="finalWaBtn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.06-2.128-.538-1.503-.626-2.529-2.164-2.607-2.27-.078-.106-.615-.818-.615-1.56 0-.742.39-1.107.528-1.259.138-.152.3-.19.4-.19.102 0 .204.001.293.006.095.004.22-.036.345.263.129.309.439 1.07.478 1.149.039.078.064.17.013.272-.051.102-.078.165-.155.253-.078.089-.164.198-.234.266-.079.076-.162.158-.07.316.092.158.409.675.877 1.092.602.536 1.11.703 1.268.782.158.079.251.069.344-.039.093-.108.397-.463.504-.622.107-.158.214-.132.357-.079.144.053.91.429 1.066.507.156.079.26.118.298.184.038.067.038.388-.106.793z"/></svg>
+            <span data-i18n="final_wa_cta">رسالة واتساب سريعة</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- Printable Formal Quotation Sheet (Displayed only on print) -->
+<div id="formalQuotationSheet">
+  <div class="quote-print-header">
+    <div>
+      <h1>OMAR STUDIO — عرض سعر رسمي ومواصفات تنفيذ</h1>
+      <p style="font-size:12px; color:#666; margin-top:4px;">حلول برمجية وتطوير منتجات رقمية متقدمة</p>
+    </div>
+    <div class="quote-print-meta">
+      <b id="printQuoteRef">REF: OS-2026-8821</b><br>
+      <span id="printQuoteDate">التاريخ: 2026/09/17</span><br>
+      <span>القاهرة · متاح عن بعد</span>
+    </div>
+  </div>
+
+  <table class="print-table">
+    <thead>
+      <tr>
+        <th>البند / نطاق العمل</th>
+        <th>المواصفات المختارة</th>
+        <th>المدة المتوقعة</th>
+        <th>الاستثمار التقديري</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><b id="printItemService">موقع شركة متكامل</b></td>
+        <td id="printItemTier">نطاق عمل احترافي (Pro)</td>
+        <td id="printItemTime">2–4 أسابيع</td>
+        <td id="printItemBase">-</td>
+      </tr>
+      <tr>
+        <td><b>الإضافات والتكاملات</b></td>
+        <td colspan="3" id="printItemAddons">دعم لغتين (عربي + إنجليزي)</td>
+      </tr>
+      <tr>
+        <td><b>الهدف التجاري</b></td>
+        <td colspan="3" id="printItemGoal">بناء تجربة رقمية استثنائية وبناء ثقة العملاء</td>
+      </tr>
+      <tr class="print-total-row">
+        <td colspan="3"><b>إجمالي الاستثمار التقديري الشامل:</b></td>
+        <td id="printItemTotal" style="color:#000;">17,850 EGP</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="print-terms">
+    <b>شروط والتزامات العمل:</b>
+    <ul style="margin:8px 0 0 16px; line-height:1.6;">
+      <li>الدفع على دفعتين: 50% دفعة بدء لتأكيد الحجز، و50% بعد مراجعة واعتماد الرابط التجريبي.</li>
+      <li>ملكية الكود المصدري والتصميم 100% للعميل مع تسليم مستودع GitHub وحسابات الاستضافة.</li>
+      <li>ضمان صيانة ودعم فني مجاني لمدة 30 يوماً من تاريخ الإطلاق الرسمي.</li>
+      <li>للتواصل والاعتماد: واتساب 201156245502+ | بريد: omarahamed2010@gmail.com</li>
+    </ul>
+  </div>
+</div>
+
+<!-- Poster Zoom Modal -->
+<div class="poster-zoom-overlay" id="posterModal">
+  <div class="poster-zoom-frame">
+    <button class="modal-close-btn" id="closePosterModal" style="color:#fff; z-index:10;">✕</button>
+    <img id="posterZoomImg" class="poster-zoom-img" src="" alt="Project Preview">
+    <div class="poster-zoom-caption">
+      <span id="posterZoomCaptionText">Project Preview</span>
+      <span style="color:var(--lime); font-size:11px;">OMAR STUDIO PORTFOLIO</span>
+    </div>
+  </div>
+</div>
+
+<!-- Booking Modal -->
+<div class="modal-overlay" id="bookingModal">
+  <div class="modal-card">
+    <button class="modal-close-btn" id="closeBookingModal">✕</button>
+    <h3 data-i18n="modal_title">حجز مكالمة استكشافية (15 دقيقة)</h3>
+    <p class="sub" data-i18n="modal_sub">مكالمة مركزة ومجانية لتحديد متطلبات مشروعك وتحديد الجدول الزمني والخطوات القادمة.</p>
+
+    <form class="modal-form" id="bookingForm">
+      <div class="form-group">
+        <label class="field-label" data-i18n="lbl_name">الاسم الكريم</label>
+        <input type="text" id="leadName" class="app-input" required placeholder="مثال: أحمد عبد الله">
+      </div>
+      <div class="form-group">
+        <label class="field-label" data-i18n="lbl_phone">رقم الهاتف أو الواتساب</label>
+        <input type="tel" id="leadPhone" class="app-input" required placeholder="مثال: 010xxxxxxxx أو مع كود الدولة">
+      </div>
+      <div class="form-group">
+        <label class="field-label" data-i18n="lbl_time">الموعد المفضل للمكالمة</label>
+        <div class="custom-select-wrap">
+          <select id="leadTime" class="app-select">
+            <option value="صباحاً (10 ص – 1 م)" selected>صباحاً (10 ص – 1 م)</option>
+            <option value="بعد الظهر (1 م – 5 م)">بعد الظهر (1 م – 5 م)</option>
+            <option value="مساءً (6 م – 10 م)">مساءً (6 م – 10 م)</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="field-label" data-i18n="lbl_notes">ملاحظات سريعة حول مشروعك</label>
+        <input type="text" id="leadNotes" class="app-input" placeholder="اكتب نبذة أو استفسار سريع...">
+      </div>
+      <button type="submit" class="btn btn-primary" style="width:100%; margin-top:8px;" data-i18n="btn_confirm_call">
+        تأكيد حجز المكالمة ↵
+      </button>
+    </form>
+  </div>
+</div>
+
+<!-- Site Footer -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <b style="color:var(--ink); font-family:var(--font-mono);">OMAR STUDIO / BUILD WITH PRECISION</b>
+      <p style="margin-top:4px;" data-i18n="footer_rights">© 2026 عمر أحمد. جميع الحقوق محفوظة — بنيت بأداء استثنائي وتصميم مخصص.</p>
+    </div>
+
+    <div class="footer-contacts">
+      <a href="https://github.com/omarahameds2010-lab" target="_blank" rel="noopener">GitHub: omarahamed2010-lab</a>
+      <a href="https://linkedin.com/in/omar-ahmed-7b97613b1" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://wa.me/201156245502" target="_blank" rel="noopener">WhatsApp: +20 115 624 5502</a>
+      <a href="mailto:omarahameds2010@gmail.com">omarahameds2010@gmail.com</a>
+    </div>
+  </div>
+</footer>
+
+<!-- Mobile Sticky Bottom Action Bar -->
+<div class="mobile-action-bar">
+  <a href="#calculator" class="calc-btn" data-i18n="mob_calc">احسب التكلفة ↵</a>
+  <button class="wa-btn" id="mobileWaBtn">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.06-2.128-.538-1.503-.626-2.529-2.164-2.607-2.27-.078-.106-.615-.818-.615-1.56 0-.742.39-1.107.528-1.259.138-.152.3-.19.4-.19.102 0 .204.001.293.006.095.004.22-.036.345.263.129.309.439 1.07.478 1.149.039.078.064.17.013.272-.051.102-.078.165-.155.253-.078.089-.164.198-.234.266-.079.076-.162.158-.07.316.092.158.409.675.877 1.092.602.536 1.11.703 1.268.782.158.079.251.069.344-.039.093-.108.397-.463.504-.622.107-.158.214-.132.357-.079.144.053.91.429 1.066.507.156.079.26.118.298.184.038.067.038.388-.106.793z"/></svg>
+    <span data-i18n="mob_wa">محادثة واتساب</span>
+  </button>
+</div>
+
+<!-- Toast Floating Notification -->
+<div class="toast-notice" id="toastNotice">
+  <span id="toastMsg">تم نسخ الملخص بنجاح!</span>
+</div>
+
+<script>
+/**
+ * Omar Studio Interactive Engine
+ * Zero-dependency, Ultra-lightweight, High Performance
+ */
+
+// Currency rates against EGP
+const CURRENCIES = {
+  EGP: { symbol: 'EGP', rate: 1, prefix: '', suffix: ' EGP' },
+  USD: { symbol: 'USD', rate: 0.0206, prefix: '$', suffix: ' USD' },
+  SAR: { symbol: 'SAR', rate: 0.0775, prefix: '', suffix: ' ر.س' },
+  AED: { symbol: 'AED', rate: 0.0758, prefix: '', suffix: ' د.إ' }
+};
+
+let currentCurrency = 'EGP';
+let currentLang = 'ar';
+
+// Offer Data map
+const OFFERS_DATA = {
+  landing: {
+    base: 7500,
+    arTitle: 'صفحة هبوط تسويقية (Landing Page)',
+    enTitle: 'Conversion Landing Page'
+  },
+  corporate: {
+    base: 11000,
+    arTitle: 'موقع شركة / براند متكامل (Corporate Web)',
+    enTitle: 'Corporate & Brand Website'
+  },
+  dashboard: {
+    base: 14500,
+    arTitle: 'لوحة تحكم وبوابة أعمال (Business Dashboard)',
+    enTitle: 'Business Dashboard & Portal'
+  },
+  ecommerce: {
+    base: 13500,
+    arTitle: 'متجر إلكتروني متكامل (E-Commerce)',
+    enTitle: 'Full E-Commerce Store'
+  },
+  ai: {
+    base: 16000,
+    arTitle: 'نموذج ذكاء اصطناعي وأتمتة (AI Prototype)',
+    enTitle: 'AI Prototype & Automation'
+  },
+  audit: {
+    base: 8500,
+    arTitle: 'فحص أمان وتسريع أداء (Security & Speed)',
+    enTitle: 'Security & Speed Audit'
+  }
+};
+
+// Translations Dictionary
+const I18N = {
+  ar: {
+    nav_works: 'الأعمال الحية',
+    nav_offers: 'الخدمات',
+    nav_process: 'الآلية',
+    nav_cta: 'احسب التكلفة ↵',
+    hero_eyebrow: 'متاح للبدء في مشروعين فقط هذا الشهر',
+    hero_title: 'ابنِ المنتج الرقمي الذي يجعل العملاء <em>يختارونك فوراً.</em>',
+    hero_desc: 'أصمم وأطور مواقع تسويقية سريعة، لوحات تحكم للأعمال، متاجر إلكترونية، ونماذج ذكاء اصطناعي تفاعلية — بدون ضبابية شركات التسويق ولا وعود وهمية.',
+    hero_calc_cta: 'تشكيل وحساب المشروع فوراً ↵',
+    hero_works_cta: 'معاينة المشاريع الحية',
+    hero_book_btn: '📅 حجز مكالمة 15 دقيقة',
+    stat_builds: 'مشروع تم إطلاقه ونشره',
+    stat_comp: 'مسابقة وطنية للأنظمة الذكية',
+    stat_ownership: 'ملكية كاملة للكود والتصميم',
+    stat_response: 'زمن الرد والتجاوب',
+    founder_title: 'عمر أحمد — مهندس برمجيات ومؤسس الاستوديو',
+    founder_status: 'متاح مباشرة لمناقشة المشروعات والحلول',
+    card_intake: 'حجز مسبق / جودة تنفيذ هندسية',
+    card_headline: 'شراكة تنفيذ مباشرة، بدون وسطاء.',
+    card_text: 'تتعامل مباشرة مع المهندس المنفذ. لا مدير حسابات ينقل الكلام، ولا تضييع وقت في اجتماعات غير منتجة.',
+    reassure_1: 'تسليم على مراحل واضحة مع رابط تجريبي مباشر',
+    reassure_2: 'كود نظيف وموثق وسهل التوسيع مستقبلاً',
+    reassure_3: 'ضمان صيانة مجانية لمدة 30 يوماً بعد الإطلاق',
+    location_meta: 'القاهرة، مصر · متاح عالمياً عن بعد',
+    turnaround_meta: 'بدء فوري خلال 48 ساعة',
+    creds_title: 'اعتمادات وشهادات موثقة',
+    works_kicker: '01 — نماذج أعمال حية تم تسليمها',
+    works_title: 'شاهد جودة التنفيذ في مشاريع حقيقية.',
+    works_desc: 'مشاريع حية شحنت بكود حقيقي، وتعمل أمامك الآن بكامل خصائصها. اضغط على أي بطاقة لتجربتها حياً أو فتح الكود.',
+    wfilter_all: 'الكل (6 مشاريع)',
+    wfilter_ecom: 'متاجر إلكترونية',
+    wfilter_web: 'منصات ومواقع ويب',
+    wfilter_ai: 'ذكاء اصطناعي',
+    wfilter_sec: 'حماية وأنظمة IoT',
+    work_1_title: 'Meridian — منصة تحليل الأسواق والبيانات الحية',
+    work_1_desc: 'منصة هندسية لتحليل حركة الأسواق وتغذية المؤشرات اللحظية في واجهة اتخاذ قرار محكمة وسريعة للغاية، قاد عمر هندسة وبناء الواجهة والمعمارية.',
+    work_2_title: 'Wave Store — متجر ملابس وأزياء متكامل',
+    work_2_desc: 'منصة تجارة إلكترونية متكاملة لماركة Wave Streetwear (Prado Clothing) شارك عمر في تأسيسها. تشمل واجهة شراء تفاعلية وخادم Node.js وقاعدة بيانات MongoDB Atlas.',
+    work_3_title: 'SANAD — منصة تقييم أنظمة RAG باللغة العربية',
+    work_3_desc: 'نظام ذكاء اصطناعي رائد للتقييم الموضوعي لنماذج الاسترجاع العربي: تقطيع نصوص واعٍ بالعربية، مقارنة متعددة لنماذج التضمين Embeddings، وقياس دقيق للهدر والهلوسة.',
+    work_4_title: 'CV Studio — منصة SaaS سحابية لبناء السير الذاتية',
+    work_4_desc: 'تطبيق سحابي متكامل بأسلوب SaaS مع معالج خطوات تفاعلي، معاينة فورية جنباً إلى جنب، 6 قوالب احترافية، مساعدة كتابة بالذكاء الاصطناعي، ولوحة لإدارة المستندات.',
+    work_5_title: 'موقع عيادة طبية متكاملة (عميل حقيقي مدفوع)',
+    work_5_desc: 'أول مشروع تجاري حقيقي مدفوع تم تسليمه بنجاح كامل: واجهة تعريفية للأطباء، استعراض التخصصات، نموذج حجز استشارات، وسرعة استجابة فائقة على الجوال.',
+    work_6_title: 'منظومة المنزل الذكي المؤمّن (Final 5 على الجمهورية)',
+    work_6_desc: 'مشروع تخرج مبادرة براعم مصر الرقمية المتأهل لأفضل 5 مشاريع على مستوى مصر: خادم Flask REST API، حاسبة استهلاك طاقة، ودائرة أمان بيومترية بنظام منطق العتبة ومبدأ CIA Triad.',
+    btn_open_live: 'معاينة النظام لايف ↗',
+    btn_explore_ai: 'استكشاف المشروع والكود ↗',
+    offers_kicker: '02 — حزم الخدمات المحددة',
+    offers_title: 'اشترِ نتائج أعمال ملموسة، وليس ساعات عمل.',
+    offers_desc: 'اختر البداية الأقرب لاحتياجك. يمكنك النقر على أي خدمة لنقلها مباشرة إلى الحاسبة وتخصيص تفاصيلها.',
+    filter_all: 'الكل (6)',
+    filter_web: 'مواقع وواجهات',
+    filter_apps: 'لوحات وتطبيقات',
+    filter_ai: 'ذكاء اصطناعي وأمان',
+    starting_from: 'يبدأ من',
+    choose_offer: 'تخصيص هذا العرض ↵',
+    most_requested: 'الأكثر طلباً للشركات',
+    calc_kicker: '03 — حاسبة النطاق والتكلفة الفورية',
+    calc_title: 'شكّل مشروعك بحرية وشاهد التقدير في ثوانٍ.',
+    calc_desc: 'الهدف هو إعطاؤك كامل الشفافية والراحة بدون مفاجآت. اختر ما تريده بالضبط واستلم ملخصاً جاهزاً للإرسال أو الطباعة.',
+    calc_panel_title: 'تحديد مواصفات المشروع',
+    field_service_type: 'نوع المنتج الرقمي المطلوب',
+    field_service_note: 'اختر الأساس',
+    field_tier: 'نطاق وحجم المشروع',
+    field_tier_note: 'حجم الخصائص',
+    tier_mvp: 'أساسي / MVP',
+    tier_mvp_desc: 'الميزات الضرورية للبدء',
+    tier_pro: 'احترافي / Pro',
+    tier_pro_desc: 'نمو وتوسع كامل',
+    tier_enterprise: 'مخصص / Custom',
+    tier_enterprise_desc: 'ميزات دقيقة ومعقدة',
+    field_timeline: 'الجدول الزمني وسرعة الإنجاز',
+    field_timeline_note: 'حسب أولوياتك',
+    field_addons: 'إضافات وتكاملات اختيارية',
+    field_addons_note: 'فعل ما تحتاجه فقط',
+    addon_brand: 'هوية بصرية وتصميم مخصص',
+    addon_lang: 'دعم لغتين (عربي + إنجليزي)',
+    addon_pay: 'ربط بوابات دفع إلكتروني',
+    addon_seo: 'تهيئة محركات بحث (SEO) فائقة',
+    addon_ai: 'مساعد ذكي AI / Chatbot مدمج',
+    addon_care: 'دعم وصيانة وضمان شهري',
+    field_goal: 'ما الهدف الأهم الذي تريد تحقيقه من هذا البناء؟',
+    field_goal_note: 'اختياري',
+    est_kicker: 'تقدير الاستثمار المتوقع',
+    row_base: 'الخدمة المختارة:',
+    row_tier: 'مستوى النطاق:',
+    row_time: 'المدة المقدرة:',
+    row_addons: 'الإضافات المفعلة:',
+    row_total: 'التقدير النهائي الشفاف:',
+    est_assurance: 'هذا التقدير استرشادي شفاف لتسهيل المحادثة الأولى. الدفع على مرحلتين (50% عند البدء و50% بعد التسليم والاختبار)، مع كود ملكك بالكامل 100%.',
+    btn_send_wa: 'إرسال هذا الملخص مباشرة على واتساب ↵',
+    btn_copy_brief: 'نسخ ملخص المشروع للحافظة',
+    matrix_title: 'ماذا يتضمن كل خيار؟ (مقارنة سريعة)',
+    col_feat: 'الميزة / المعيار',
+    row_m_design: 'التصميم وتجربة المستخدم (UI/UX)',
+    m_d_1: 'تصميم مخصص سريع',
+    m_d_2: 'تصميم متكامل ونظام مكونات فخم',
+    m_d_3: 'هوية رقمية وأنيميشن تفاعلي دقيق',
+    row_m_speed: 'سرعة التحميل والتوافق',
+    row_m_cms: 'لوحة التحكم وإدارة المحتوى',
+    row_m_revisions: 'جولات المراجعة والتعديل',
+    row_m_warranty: 'الضمان والدعم بعد الإطلاق',
+    process_kicker: '04 — آلية العمل الواضحة',
+    process_title: 'وضوح تام في كل خطوة، بدون مفاجآت.',
+    process_desc: 'يمر كل مشروع بـ 4 خطوات محددة سلفاً، لتعرف دائماً ما الذي يجري ومتى تستلم كل جزء.',
+    step_1_title: 'التوضيح والاستكشاف (Clarify)',
+    step_1_desc: 'مكالمة مركزة 20 دقيقة نحدد فيها العميل المستهدف، النتيجة المطلوبة، ونستبعد الحشو غير المجدي.',
+    step_1_title_2: 'التأطير والتصميم (Frame)',
+    step_2_desc: 'تحويل الفكرة إلى نطاق عمل محدد وبروتوتايب تفاعلي تشاهده وتوافق عليه قبل كتابة الكود.',
+    step_3_title: 'البناء والاختبار (Build)',
+    step_3_desc: 'تطوير الكود النظيف، ربط البيانات، الاختبار على مختلف الشاشات مع تحديثات أسبوعية مرئية.',
+    step_4_title: 'التسليم والمفاتيح (Handover)',
+    step_4_desc: 'نقل الدومين والاستضافة، تسليم الكود في مستودع GitHub خاص بك، وفيديو شرح مصور لكيفية الإدارة.',
+    proof_kicker: '05 — لماذا يثق بنا العملاء',
+    proof_title: 'استثمار مضمون يعود عليك بنتائج حقيقية.',
+    proof_desc: 'أنت لا تدفع مقابل قالب جاهز؛ أنت تشتري شريكاً تقنياً يفهم في نمو الأعمال ويشرح كل قرار برمجياً وتجارياً.',
+    proof_card_1: 'مشروع رقمي تم تسليمه',
+    proof_card_2: 'التزام بمواعيد التسليم',
+    proof_card_3: 'أي تكاليف خفية مستترة',
+    proof_card_4: 'أقصى وقت للرد والدعم',
+    faq_kicker: '06 — الأسئلة الشائعة وتطمين العميل',
+    faq_title: 'كل ما يدور في ذهنك، بإجابات واضحة.',
+    faq_desc: 'إليك أكثر الأسئلة التي يطرحها العملاء قبل البدء، لتكون مطمئناً لكل تفصيلة.',
+    faq_q1: 'كيف تسير آلية الدفع وتقسيم الأقساط؟',
+    faq_a1: 'تسير الدفعات بأمان وشفافية تامة: 50% دفعة أولى لبدء المشروع وحجز النطاق والجدول الزمني، و 50% الباقية فقط بعد مراجعة الموقع على الرابط التجريبي والتأكد من مطابقته لكافة متطلباتك واعتماده رسمياً.',
+    faq_q2: 'هل أمتلك الكود والتصميم بنسبة 100% بعد الانتهاء؟',
+    faq_a2: 'نعم، بنسبة 100% وبلا استثناء. يتم تسليمك مستودع الكود الكامل (GitHub repo)، ملفات التصميم، وحسابات الاستضافة والدومين. لا توجد أي قيود أو اشتراكات احتكارية تربطك بي مستقبلاً.',
+    faq_q3: 'ماذا لو أردت تعديلات أثناء العمل أو بعد الإطلاق؟',
+    faq_a3: 'كل مشروع يتضمن جولات مراجعة مخصصة لضمان رضاك التام عن التصميم والوظائف. بالإضافة إلى ذلك، يشمل كل مشروع ضمان صيانة مجانية لمدة 30 يوماً بعد الإطلاق لإصلاح أي ملاحظات برمجية فوراً.',
+    faq_q4: 'لدي فكرة غير مكتملة أو تفاصيل غير منظمة، هل يمكن البدء؟',
+    faq_a4: 'هذا هو الوضع الطبيعي لمعظم أصحاب الأعمال! ليس مطلوباً منك كتابة مواصفات تقنية معقدة؛ فقرة واحدة أو محادثة صوتية عبر واتساب كافية تماماً لنبدأ في صياغة الفكرة وتحويلها إلى نطاق عمل تقني واضح خطوة بخطوة.',
+    faq_q5: 'كيف سنتابع سير العمل خطوة بخطوة؟',
+    faq_a5: 'نفتح قناة تواصل مباشرة (واتساب أو سلاك)، مع رابط Staging تجريبي يتم تحديثه أسبوعياً لترى المشروع وهو يتشكل أمام عينيك وتجربه بنفسك على هاتفك.',
+    final_kicker: 'الخطوة العملية القادمة',
+    final_title: 'هات فكرتك كما هي.. ودعنا نبسطها ونبنيها.',
+    final_desc: 'فقرة واحدة تكفي. سأساعدك في تحويلها إلى خطوة أولى قابلة للتنفيذ السريع بدون أي التزام مالي.',
+    final_calc_cta: 'احسب التكلفة وشكّل طلبك ↵',
+    final_wa_cta: 'رسالة واتساب سريعة',
+    footer_rights: '© 2026 عمر أحمد. جميع الحقوق محفوظة — بنيت بأداء استثنائي وتصميم مخصص.',
+    mob_calc: 'احسب التكلفة ↵',
+    mob_wa: 'محادثة واتساب',
+    modal_title: 'حجز مكالمة استكشافية (15 دقيقة)',
+    modal_sub: 'مكالمة مركزة ومجانية لتحديد متطلبات مشروعك وتحديد الجدول الزمني والخطوات القادمة.',
+    lbl_name: 'الاسم الكريم',
+    lbl_phone: 'رقم الهاتف أو الواتساب',
+    lbl_time: 'الموعد المفضل للمكالمة',
+    lbl_notes: 'ملاحظات سريعة حول مشروعك',
+    btn_confirm_call: 'تأكيد حجز المكالمة ↵'
+  },
+  en: {
+    nav_works: 'Live Works',
+    nav_offers: 'Offers',
+    nav_process: 'Process',
+    nav_cta: 'Get Estimate ↵',
+    hero_eyebrow: 'Available for only 2 builds this month',
+    hero_title: 'Build the digital product that makes clients <em>choose you instantly.</em>',
+    hero_desc: 'I design and ship high-converting websites, business dashboards, e-commerce stores, and AI prototypes — without agency bureaucracy or empty promises.',
+    hero_calc_cta: 'Configure & Estimate Project ↵',
+    hero_works_cta: 'Explore Live Case Studies',
+    hero_book_btn: '📅 Book 15-Min Call',
+    stat_builds: 'Public Shipped Products',
+    stat_comp: 'National IoT Competition Finalist',
+    stat_ownership: '100% Code Ownership',
+    stat_response: 'Average Response Time',
+    founder_title: 'Omar Ahmed — Software Engineer & Studio Founder',
+    founder_status: 'Available directly to consult on architecture',
+    card_intake: 'Advance Booking / High Precision',
+    card_headline: 'Direct senior partnership. No middlemen.',
+    card_text: 'You work directly with the builder. No account managers miscommunicating, no wasted hours in unproductive status meetings.',
+    reassure_1: 'Phased milestone delivery with live staging previews',
+    reassure_2: 'Clean, documented code built for easy future expansion',
+    reassure_3: 'Complimentary 30-day post-launch warranty & bug fixes',
+    location_meta: 'Cairo, Egypt · Remote Worldwide',
+    turnaround_meta: 'Fast onboarding within 48 hours',
+    creds_title: 'Institutional Credentials & Trust',
+    works_kicker: '01 — Verified Production Builds',
+    works_title: 'Real engineering in live, shipped products.',
+    works_desc: 'Real systems shipped with real code. Click on any card to test the live demo or inspect the repository.',
+    wfilter_all: 'All (6 Projects)',
+    wfilter_ecom: 'E-Commerce',
+    wfilter_web: 'Web & SaaS',
+    wfilter_ai: 'AI Systems',
+    wfilter_sec: 'Security & IoT',
+    work_1_title: 'Meridian — Global Market Terminal & Analytics',
+    work_1_desc: 'Live market terminal engineered to ingest high-frequency indicators into a rapid, defensible decision surface. Team Leader & Lead Engineer.',
+    work_2_title: 'Wave Store — Full-Stack Streetwear E-Commerce',
+    work_2_desc: 'Complete e-commerce platform for Wave Streetwear (Prado Clothing) co-founded by Omar. Node.js + MongoDB Atlas REST API backend.',
+    work_3_title: 'SANAD — Arabic RAG Evaluation Platform',
+    work_3_desc: 'Groundbreaking AI evaluation platform for Arabic retrieval: Arabic-aware chunking, multi-embedding benchmarking, and verified groundedness metrics.',
+    work_4_title: 'CV Studio — SaaS Cloud Resume Builder',
+    work_4_desc: 'Modern cloud SaaS application built with Next.js & TypeScript, featuring a multi-step builder, live preview, 6 templates, and AI writing assistance.',
+    work_5_title: 'Medical Clinic Website (Paid Client Build)',
+    work_5_desc: 'Commercial paid healthcare project delivered and approved: practitioner profile, treatment showcase, mobile appointment booking, and sub-second load time.',
+    work_6_title: 'Secure Smart Home Eco-System (National Final 5)',
+    work_6_desc: 'Digital Egypt Cubs graduation build achieving top 5 nationwide: Flask REST API, energy calculator, and ESP32 biometric access based on the CIA Triad.',
+    btn_open_live: 'Open Live Terminal ↗',
+    btn_explore_ai: 'Explore System & Code ↗',
+    offers_kicker: '02 — Productized Offers',
+    offers_title: 'Buy measurable outcomes, not scattered hours.',
+    offers_desc: 'Pick the closest starting point to your bottleneck. Click any card to customize it directly in the scope configurator.',
+    filter_all: 'All Offers (6)',
+    filter_web: 'Websites & Interfaces',
+    filter_apps: 'Dashboards & Apps',
+    filter_ai: 'AI & Security',
+    starting_from: 'Starting from',
+    choose_offer: 'Customize this offer ↵',
+    most_requested: 'Most Popular for Businesses',
+    calc_kicker: '03 — Instant Scope & Cost Configurator',
+    calc_title: 'Shape your project with clarity. See your estimate live.',
+    calc_desc: 'Complete transparency from day one. Tailor exactly what you need and get an organized brief ready to send or print.',
+    calc_panel_title: 'Configure Your Build Parameters',
+    field_service_type: 'Digital Product Type',
+    field_service_note: 'Select Foundation',
+    field_tier: 'Project Scope & Depth',
+    field_tier_note: 'Feature Complexity',
+    tier_mvp: 'Starter / MVP',
+    tier_mvp_desc: 'Essential core features to launch',
+    tier_pro: 'Professional / Pro',
+    tier_pro_desc: 'Complete growth & scalability',
+    tier_enterprise: 'Bespoke / Enterprise',
+    tier_enterprise_desc: 'Deep custom workflows & logic',
+    field_timeline: 'Delivery Timeline & Speed',
+    field_timeline_note: 'Pacing priority',
+    field_addons: 'Optional Add-ons & Integrations',
+    field_addons_note: 'Toggle only what you need',
+    addon_brand: 'Brand Identity & Custom UI Kit',
+    addon_lang: 'Bilingual Support (AR + EN)',
+    addon_pay: 'Payment Gateway Integration',
+    addon_seo: 'Elite SEO & Performance Audit',
+    addon_ai: 'Built-in AI Assistant / Chatbot',
+    addon_care: 'Monthly Retainer & Ongoing Care',
+    field_goal: 'What primary success outcome do you want to achieve?',
+    field_goal_note: 'Optional',
+    est_kicker: 'Estimated Starting Range',
+    row_base: 'Selected Service:',
+    row_tier: 'Scope Level:',
+    row_time: 'Estimated Pacing:',
+    row_addons: 'Active Add-ons:',
+    row_total: 'Transparent Starting Estimate:',
+    est_assurance: 'This is a clear starting estimate to guide our first discovery talk. Payment is strictly 50/50 milestone-based, with 100% full IP ownership.',
+    btn_send_wa: 'Send This Brief on WhatsApp ↵',
+    btn_copy_brief: 'Copy Project Scope Summary',
+    matrix_title: 'What is Included? (Side-by-Side Comparison)',
+    col_feat: 'Deliverable / Standard',
+    row_m_design: 'UI/UX Design & Craftsmanship',
+    m_d_1: 'Clean rapid layout',
+    m_d_2: 'Complete design system & custom assets',
+    m_d_3: 'Bespoke identity & micro-animations',
+    row_m_speed: 'Load Speed & Optimization',
+    row_m_cms: 'Content Management Dashboard',
+    row_m_revisions: 'Feedback & Revision Rounds',
+    row_m_warranty: 'Post-Launch Warranty & Support',
+    process_kicker: '04 — The Battle-Tested Process',
+    process_title: 'Total visibility at every step. Zero surprises.',
+    process_desc: 'Every project moves through 4 explicit stages so you always know what is being shipped and when.',
+    step_1_title: 'Clarify & Align',
+    step_1_desc: 'A focused 20-minute discovery call to isolate the target user, primary friction, and exclude bloated features.',
+    step_1_title_2: 'Frame & Wireframe',
+    step_2_desc: 'Translate the concept into an actionable milestone scope and interactive preview for your sign-off.',
+    step_3_title: 'Build & Test',
+    step_3_desc: 'Ship production-grade code, integrate APIs, test across real viewports with weekly recorded progress demos.',
+    step_4_title: 'Handover & Ownership',
+    step_4_desc: 'Domain setup, GitHub repo transfer, and a recorded Loom walkthrough empowering your team to self-manage.',
+    proof_kicker: '05 — Why Clients Trust Omar Studio',
+    proof_title: 'Guaranteed investment resulting in real business gains.',
+    proof_desc: 'You are not renting templates. You are hiring a technical partner who understands conversion and justifies every architectural decision.',
+    proof_card_1: 'Shipped Digital Products',
+    proof_card_2: 'On-Time Milestone Rate',
+    proof_card_3: 'Hidden or Surprise Fees',
+    proof_card_4: 'Max Response Target',
+    faq_kicker: '06 — Client Peace of Mind & FAQs',
+    faq_title: 'Clear answers to everything on your mind.',
+    faq_desc: 'Here are the most common questions clients ask before starting, ensuring you feel 100% comfortable.',
+    faq_q1: 'How does payment and billing work?',
+    faq_a1: 'We follow a safe milestone system: 50% upfront to reserve your build slot and kickoff development, and the remaining 50% only after you review and approve the staging build on your own devices.',
+    faq_q2: 'Do I own 100% of the code and intellectual property?',
+    faq_a2: 'Yes, 100% full intellectual ownership without exceptions. We transfer the GitHub repository, design assets, and cloud credentials to you. No proprietary locks or recurring agency captivity.',
+    faq_q3: 'What if I need changes during the build or after launch?',
+    faq_a3: 'Every project includes designated revision rounds to ensure you are delighted with the result. Additionally, every build comes with 30 days of free post-launch support and bug fixes.',
+    faq_q4: 'My idea is still rough and informal. Can we still begin?',
+    faq_a4: 'Absolutely! Most successful projects start as a rough draft. You do not need technical jargon; a single paragraph or a WhatsApp voice note is enough for us to structure a clean technical roadmap.',
+    faq_q5: 'How will we communicate during the build?',
+    faq_a5: 'We establish a direct WhatsApp or Slack channel, backed by a live staging URL updated weekly so you can test real progress in real time.',
+    final_kicker: 'The Next Practical Move',
+    final_title: 'Bring me the messy version.. We will shape it together.',
+    final_desc: 'One paragraph is plenty. I will help structure it into an actionable, high-ROI first milestone with zero pressure.',
+    final_calc_cta: 'Configure Your Build ↵',
+    final_wa_cta: 'Send WhatsApp Message',
+    footer_rights: '© 2026 Omar Ahmed. All rights reserved — Built with speed and bespoke craftsmanship.',
+    mob_calc: 'Estimate Cost ↵',
+    mob_wa: 'WhatsApp Chat',
+    modal_title: 'Book a Free 15-Min Discovery Call',
+    modal_sub: 'A focused, zero-pressure conversation to define project scope, timeline, and the fastest ROI path.',
+    lbl_name: 'Full Name',
+    lbl_phone: 'Phone or WhatsApp Number',
+    lbl_time: 'Preferred Call Window',
+    lbl_notes: 'Quick Notes on Your Project',
+    btn_confirm_call: 'Confirm Discovery Call ↵'
+  }
+};
+
+// DOM Elements
+const serviceSelect = document.getElementById('serviceSelect');
+const timelineSelect = document.getElementById('timelineSelect');
+const projectGoal = document.getElementById('projectGoal');
+const totalEstimateVal = document.getElementById('totalEstimateVal');
+const currentCurrencyLabel = document.getElementById('currentCurrencyLabel');
+const breakdownService = document.getElementById('breakdownService');
+const breakdownTier = document.getElementById('breakdownTier');
+const breakdownTime = document.getElementById('breakdownTime');
+const breakdownAddonsCount = document.getElementById('breakdownAddonsCount');
+const breakdownTotal = document.getElementById('breakdownTotal');
+const toastNotice = document.getElementById('toastNotice');
+const toastMsg = document.getElementById('toastMsg');
+
+// Modal Elements
+const bookingModal = document.getElementById('bookingModal');
+const openBookingModalBtn = document.getElementById('openBookingModalBtn');
+const calcOpenModalBtn = document.getElementById('calcOpenModalBtn');
+const closeBookingModal = document.getElementById('closeBookingModal');
+const bookingForm = document.getElementById('bookingForm');
+const leadName = document.getElementById('leadName');
+const leadPhone = document.getElementById('leadPhone');
+const leadTime = document.getElementById('leadTime');
+const leadNotes = document.getElementById('leadNotes');
+
+// Poster Lightbox
+const posterModal = document.getElementById('posterModal');
+const posterZoomImg = document.getElementById('posterZoomImg');
+const posterZoomCaptionText = document.getElementById('posterZoomCaptionText');
+const closePosterModal = document.getElementById('closePosterModal');
+
+// Print Elements
+const printQuoteBtn = document.getElementById('printQuoteBtn');
+const printQuoteRef = document.getElementById('printQuoteRef');
+const printQuoteDate = document.getElementById('printQuoteDate');
+const printItemService = document.getElementById('printItemService');
+const printItemTier = document.getElementById('printItemTier');
+const printItemTime = document.getElementById('printItemTime');
+const printItemBase = document.getElementById('printItemBase');
+const printItemAddons = document.getElementById('printItemAddons');
+const printItemGoal = document.getElementById('printItemGoal');
+const printItemTotal = document.getElementById('printItemTotal');
+
+// Addon Checkboxes
+const addons = [
+  { id: 'addBrand', nameAr: 'هوية بصرية', nameEn: 'Brand Identity', el: document.getElementById('addBrand'), baseCost: 2000 },
+  { id: 'addLang', nameAr: 'دعم لغتين', nameEn: 'Bilingual (AR/EN)', el: document.getElementById('addLang'), baseCost: 1500 },
+  { id: 'addPay', nameAr: 'بوابة دفع', nameEn: 'Payment Gateway', el: document.getElementById('addPay'), baseCost: 2500 },
+  { id: 'addSeo', nameAr: 'تهيئة SEO', nameEn: 'SEO Optimization', el: document.getElementById('addSeo'), baseCost: 1800 },
+  { id: 'addAi', nameAr: 'شات بوت AI', nameEn: 'AI Assistant', el: document.getElementById('addAi'), baseCost: 3200 },
+  { id: 'addCare', nameAr: 'صيانة شهرية', nameEn: 'Monthly Care', el: document.getElementById('addCare'), baseCost: 2000 }
+];
+
+let selectedTierMultiplier = 1.35;
+let selectedTierName = 'pro';
+
+// Format currency amount
+function formatMoney(amountInEgp) {
+  const cur = CURRENCIES[currentCurrency];
+  const converted = Math.round(amountInEgp * cur.rate);
+  return {
+    raw: converted,
+    formatted: cur.prefix + converted.toLocaleString() + cur.suffix,
+    plainNumber: converted.toLocaleString()
+  };
+}
+
+// Recalculate everything
+function updateCalculations() {
+  const selectedServiceKey = serviceSelect.value;
+  const baseServiceCost = OFFERS_DATA[selectedServiceKey].base;
+  const timeMultiplier = parseFloat(timelineSelect.value);
+
+  // Addons total in EGP
+  let activeAddons = [];
+  let addonsTotalEgp = 0;
+  addons.forEach(ad => {
+    if (ad.el.checked) {
+      addonsTotalEgp += ad.baseCost;
+      activeAddons.push(currentLang === 'ar' ? ad.nameAr : ad.nameEn);
+      ad.el.closest('.addon-item').classList.add('checked');
+    } else {
+      ad.el.closest('.addon-item').classList.remove('checked');
+    }
+  });
+
+  // Calculation Formula: (Base * Tier * Time) + Addons
+  const totalEgp = Math.round((baseServiceCost * selectedTierMultiplier * timeMultiplier) + addonsTotalEgp);
+  const money = formatMoney(totalEgp);
+
+  // Update DOM
+  totalEstimateVal.textContent = money.plainNumber;
+  currentCurrencyLabel.textContent = CURRENCIES[currentCurrency].symbol;
+
+  // Breakdown Texts
+  const sTitle = currentLang === 'ar' ? OFFERS_DATA[selectedServiceKey].arTitle : OFFERS_DATA[selectedServiceKey].enTitle;
+  breakdownService.textContent = sTitle;
+
+  const tierNames = {
+    mvp: { ar: 'أساسي (x1.0)', en: 'Starter / MVP (x1.0)' },
+    pro: { ar: 'احترافي (x1.35)', en: 'Pro / Growth (x1.35)' },
+    enterprise: { ar: 'مخصص (x1.8)', en: 'Enterprise (x1.8)' }
+  };
+  breakdownTier.textContent = tierNames[selectedTierName][currentLang];
+
+  const selectedTimelineOption = timelineSelect.options[timelineSelect.selectedIndex];
+  const weeksStr = selectedTimelineOption.dataset.weeks + (currentLang === 'ar' ? ' أسابيع' : ' weeks');
+  breakdownTime.textContent = weeksStr;
+
+  if (activeAddons.length === 0) {
+    breakdownAddonsCount.textContent = currentLang === 'ar' ? 'بدون إضافات' : 'No add-ons selected';
+  } else {
+    breakdownAddonsCount.textContent = activeAddons.length + (currentLang === 'ar' ? ' إضافات مختارة' : ' add-ons active');
+  }
+
+  breakdownTotal.textContent = money.formatted;
+
+  // Update Print Document Cache
+  printItemService.textContent = sTitle;
+  printItemTier.textContent = tierNames[selectedTierName][currentLang];
+  printItemTime.textContent = weeksStr;
+  printItemBase.textContent = formatMoney(Math.round(baseServiceCost * selectedTierMultiplier * timeMultiplier)).formatted;
+  printItemAddons.textContent = activeAddons.length > 0 ? activeAddons.join(' + ') : (currentLang === 'ar' ? 'بدون إضافات' : 'None');
+  printItemGoal.textContent = projectGoal.value.trim() || (currentLang === 'ar' ? 'بناء منتج رقمي احترافي' : 'Build a professional digital product');
+  printItemTotal.textContent = money.formatted;
+
+  // Save in LocalStorage
+  savePreferences();
+}
+
+// Update all Offer card prices based on chosen currency
+function updateOfferCardPrices() {
+  Object.keys(OFFERS_DATA).forEach(key => {
+    const base = OFFERS_DATA[key].base;
+    const el = document.getElementById(`cardPrice${key.charAt(0).toUpperCase() + key.slice(1)}`);
+    if (el) {
+      el.textContent = formatMoney(base).formatted;
+    }
+  });
+
+  // Update Add-on Labels
+  addons.forEach(ad => {
+    const labelCost = ad.el.closest('.addon-item').querySelector('.addon-cost');
+    if (labelCost) {
+      const money = formatMoney(ad.baseCost);
+      const isMonthly = ad.id === 'addCare';
+      const suffix = isMonthly ? (currentLang === 'ar' ? '/شهر' : '/mo') : '';
+      labelCost.textContent = '+' + money.formatted + suffix;
+    }
+  });
+}
+
+// Show Toast
+function showToast(text) {
+  toastMsg.textContent = text;
+  toastNotice.classList.add('show');
+  setTimeout(() => {
+    toastNotice.classList.remove('show');
+  }, 2800);
+}
+
+// Set Language
+function setLanguage(lang) {
+  currentLang = lang;
+  document.documentElement.lang = lang;
+  document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+
+  // Update toggle buttons
+  document.querySelectorAll('#langGroup .toggle-btn').forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.lang === lang);
+  });
+
+  // Translate all marked elements
+  const dict = I18N[lang];
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.dataset.i18n;
+    if (dict[key]) {
+      el.innerHTML = dict[key];
+    }
+  });
+
+  // Translate Select Options
+  if (lang === 'en') {
+    serviceSelect.options[0].text = 'Conversion Landing Page';
+    serviceSelect.options[1].text = 'Corporate & Brand Website';
+    serviceSelect.options[2].text = 'Business Dashboard & Portal';
+    serviceSelect.options[3].text = 'E-Commerce Store';
+    serviceSelect.options[4].text = 'AI Prototype & Sprint';
+    serviceSelect.options[5].text = 'Security & Speed Audit';
+
+    timelineSelect.options[0].text = 'Expedited / Urgent (1–2 weeks) [+20%]';
+    timelineSelect.options[1].text = 'Balanced Standard (2–4 weeks) [Best]';
+    timelineSelect.options[2].text = 'Phased Pace (4–7 weeks) [-5%]';
+
+    projectGoal.placeholder = 'e.g., Increase conversion by 40%, automate inventory, pitch to investors...';
+    leadNotes.placeholder = 'Brief details about what you need...';
+  } else {
+    serviceSelect.options[0].text = 'صفحة هبوط تسويقية (Landing Page)';
+    serviceSelect.options[1].text = 'موقع شركة / براند متكامل (Corporate Web)';
+    serviceSelect.options[2].text = 'لوحة تحكم وبوابة أعمال (Business Dashboard)';
+    serviceSelect.options[3].text = 'متجر إلكتروني متكامل (E-Commerce)';
+    serviceSelect.options[4].text = 'نموذج أولي ذكاء اصطناعي وأتمتة (AI Prototype)';
+    serviceSelect.options[5].text = 'فحص أمان وتسريع أداء (Security & Speed)';
+
+    timelineSelect.options[0].text = 'تسليم عاجل ومكثف (1–2 أسبوع) [+20%]';
+    timelineSelect.options[1].text = 'جدول قياسي متزن (2–4 أسابيع) [الأفضل]';
+    timelineSelect.options[2].text = 'تسليم مرحلي مريح (4–7 أسابيع) [-5%]';
+
+    projectGoal.placeholder = 'مثال: مضاعفة المبيعات، أتمتة إدارة العملاء، إبهار المستثمرين...';
+    leadNotes.placeholder = 'اكتب نبذة أو استفسار سريع...';
+  }
+
+  updateCalculations();
+}
+
+// Set Currency
+function setCurrency(cur) {
+  if (!CURRENCIES[cur]) return;
+  currentCurrency = cur;
+
+  document.querySelectorAll('#currencyGroup .toggle-btn').forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.cur === cur);
+  });
+
+  updateOfferCardPrices();
+  updateCalculations();
+  showToast(currentLang === 'ar' ? `تم تغيير العملة إلى ${cur}` : `Currency changed to ${cur}`);
+}
+
+// Tier Pills Selection
+document.querySelectorAll('#tierGroup .tier-pill').forEach(pill => {
+  pill.addEventListener('click', () => {
+    document.querySelectorAll('#tierGroup .tier-pill').forEach(p => p.classList.remove('selected'));
+    pill.classList.add('selected');
+    selectedTierMultiplier = parseFloat(pill.dataset.mult);
+    selectedTierName = pill.dataset.tier;
+    updateCalculations();
+  });
+});
+
+// Category Filter Chips for Offers
+document.querySelectorAll('#offerFilters .filter-chip').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('#offerFilters .filter-chip').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+
+    const filter = btn.dataset.filter;
+    document.querySelectorAll('#offersContainer .offer-card').forEach(card => {
+      if (filter === 'all' || card.dataset.cat === filter) {
+        card.style.display = 'flex';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  });
+});
+
+// Category Filter Chips for Works
+document.querySelectorAll('#workFilters .filter-chip').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('#workFilters .filter-chip').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+
+    const filter = btn.dataset.wfilter;
+    document.querySelectorAll('#worksContainer .work-card').forEach(card => {
+      const cats = card.dataset.wcat || '';
+      if (filter === 'all' || cats.includes(filter)) {
+        card.style.display = 'flex';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  });
+});
+
+// Lightbox for Project Posters
+document.querySelectorAll('.work-thumb-wrap').forEach(wrap => {
+  wrap.addEventListener('click', () => {
+    const src = wrap.dataset.zoom;
+    const caption = wrap.dataset.caption;
+    if (src) {
+      posterZoomImg.src = src;
+      posterZoomCaptionText.textContent = caption || 'Project Preview';
+      posterModal.classList.add('active');
+    }
+  });
+});
+function closePosterLightbox() {
+  posterModal.classList.remove('active');
+  posterZoomImg.src = '';
+}
+closePosterModal.addEventListener('click', closePosterLightbox);
+posterModal.addEventListener('click', (e) => {
+  if (e.target === posterModal) closePosterLightbox();
+});
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') {
+    closePosterLightbox();
+    closeModal();
+  }
+});
+
+// "Customize this offer" button in cards
+document.querySelectorAll('[data-pick]').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const offerId = btn.dataset.pick;
+    serviceSelect.value = offerId;
+    updateCalculations();
+
+    const calcEl = document.getElementById('calculator');
+    calcEl.scrollIntoView({ behavior: 'smooth' });
+
+    showToast(currentLang === 'ar' ? 'تم اختيار الخدمة في الحاسبة!' : 'Offer loaded in configurator!');
+  });
+});
+
+// FAQ Accordion
+document.querySelectorAll('.faq-trigger').forEach(trigger => {
+  trigger.addEventListener('click', () => {
+    const item = trigger.closest('.faq-item');
+    const wasActive = item.classList.contains('active');
+    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
+    if (!wasActive) item.classList.add('active');
+  });
+});
+
+// Generate Project Brief Text
+function generateBriefText() {
+  const serviceKey = serviceSelect.value;
+  const sTitle = currentLang === 'ar' ? OFFERS_DATA[serviceKey].arTitle : OFFERS_DATA[serviceKey].enTitle;
+  const goal = projectGoal.value.trim() || (currentLang === 'ar' ? 'بناء تجربة رقمية استثنائية لشركتي' : 'Build an exceptional digital product');
+  const money = formatMoney((OFFERS_DATA[serviceKey].base * selectedTierMultiplier * parseFloat(timelineSelect.value)) + getAddonsTotal());
+  const selectedTimeline = timelineSelect.options[timelineSelect.selectedIndex].dataset.weeks + (currentLang === 'ar' ? ' أسابيع' : ' weeks');
+
+  let activeAddonsList = [];
+  addons.forEach(ad => {
+    if (ad.el.checked) {
+      activeAddonsList.push(currentLang === 'ar' ? ad.nameAr : ad.nameEn);
+    }
+  });
+
+  if (currentLang === 'ar') {
+    return `مرحباً عمر، أود مناقشة مشروع جديد معك:
+- الخدمة: ${sTitle}
+- نطاق العمل: ${selectedTierName === 'mvp' ? 'أساسي MVP' : (selectedTierName === 'pro' ? 'احترافي Pro' : 'مخصص Enterprise')}
+- المدة المقدرة: ${selectedTimeline}
+- الإضافات المختارة: ${activeAddonsList.length > 0 ? activeAddonsList.join(' + ') : 'بدون إضافات'}
+- التقدير المبدئي: ${money.formatted}
+- هدف المشروع: ${goal}
+
+أود تحديد موعد لمكالمة استكشافية أو مناقشة الخطوة القادمة.`;
+  } else {
+    return `Hi Omar, I am interested in building a project with you:
+- Service: ${sTitle}
+- Scope Level: ${selectedTierName.toUpperCase()}
+- Timeline: ${selectedTimeline}
+- Selected Add-ons: ${activeAddonsList.length > 0 ? activeAddonsList.join(' + ') : 'None'}
+- Starting Estimate: ${money.formatted}
+- Primary Goal: ${goal}
+
+I would like to discuss next steps or schedule a quick discovery call.`;
+  }
+}
+
+function getAddonsTotal() {
+  let sum = 0;
+  addons.forEach(ad => { if (ad.el.checked) sum += ad.baseCost; });
+  return sum;
+}
+
+// WhatsApp Handlers
+function openWhatsAppWithBrief() {
+  const text = generateBriefText();
+  const url = `https://wa.me/201156245502?text=${encodeURIComponent(text)}`;
+  window.open(url, '_blank');
+}
+
+document.getElementById('sendBriefWhatsapp').addEventListener('click', openWhatsAppWithBrief);
+document.getElementById('mobileWaBtn').addEventListener('click', openWhatsAppWithBrief);
+document.getElementById('finalWaBtn').addEventListener('click', openWhatsAppWithBrief);
+
+// Copy Brief to Clipboard
+document.getElementById('copySummaryBtn').addEventListener('click', async () => {
+  const text = generateBriefText();
+  try {
+    await navigator.clipboard.writeText(text);
+    showToast(currentLang === 'ar' ? 'تم نسخ ملخص المشروع للحافظة بنجاح!' : 'Project brief copied to clipboard!');
+  } catch (err) {
+    const ta = document.createElement('textarea');
+    ta.value = text;
+    document.body.appendChild(ta);
+    ta.select();
+    document.execCommand('copy');
+    document.body.removeChild(ta);
+    showToast(currentLang === 'ar' ? 'تم نسخ ملخص المشروع!' : 'Brief copied!');
+  }
+});
+
+// Print Formal Quote
+printQuoteBtn.addEventListener('click', () => {
+  const refNum = 'OS-' + new Date().getFullYear() + '-' + Math.floor(1000 + Math.random() * 9000);
+  printQuoteRef.textContent = 'REF: ' + refNum;
+  printQuoteDate.textContent = (currentLang === 'ar' ? 'التاريخ: ' : 'Date: ') + new Date().toISOString().split('T')[0];
+  updateCalculations();
+  window.print();
+});
+
+// Modal Logic
+function openModal() {
+  bookingModal.classList.add('active');
+  const selectedSvcText = serviceSelect.options[serviceSelect.selectedIndex].text;
+  leadNotes.value = (currentLang === 'ar' ? 'بخصوص مشروع: ' : 'Regarding: ') + selectedSvcText;
+}
+function closeModal() {
+  bookingModal.classList.remove('active');
+}
+
+openBookingModalBtn.addEventListener('click', openModal);
+calcOpenModalBtn.addEventListener('click', openModal);
+closeBookingModal.addEventListener('click', closeModal);
+bookingModal.addEventListener('click', (e) => {
+  if (e.target === bookingModal) closeModal();
+});
+
+// Modal Form Submission
+bookingForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const name = leadName.value.trim();
+  const phone = leadPhone.value.trim();
+  const time = leadTime.value;
+  const notes = leadNotes.value.trim();
+
+  const msg = currentLang === 'ar' 
+    ? `مرحباً عمر، قمت بطلب حجز مكالمة استكشافية:
+- الاسم: ${name}
+- الهاتف: ${phone}
+- الموعد المفضل: ${time}
+- تفاصيل: ${notes}`
+    : `Hi Omar, I requested a 15-min discovery call:
+- Name: ${name}
+- Phone: ${phone}
+- Preferred Time: ${time}
+- Details: ${notes}`;
+
+  closeModal();
+  showToast(currentLang === 'ar' ? 'تم تأكيد طلبك! جاري فتح الواتساب للتأكيد...' : 'Booking request sent! Opening WhatsApp...');
+
+  setTimeout(() => {
+    window.open(`https://wa.me/201156245502?text=${encodeURIComponent(msg)}`, '_blank');
+  }, 900);
+});
+
+// Event Listeners for inputs
+[serviceSelect, timelineSelect, projectGoal].forEach(el => {
+  el.addEventListener('change', updateCalculations);
+  el.addEventListener('input', updateCalculations);
+});
+addons.forEach(ad => ad.el.addEventListener('change', updateCalculations));
+
+// Currency Buttons
+document.querySelectorAll('#currencyGroup .toggle-btn').forEach(btn => {
+  btn.addEventListener('click', () => setCurrency(btn.dataset.cur));
+});
+
+// Language Buttons
+document.querySelectorAll('#langGroup .toggle-btn').forEach(btn => {
+  btn.addEventListener('click', () => setLanguage(btn.dataset.lang));
+});
+
+// LocalStorage Persistence
+function savePreferences() {
+  const state = {
+    cur: currentCurrency,
+    lang: currentLang,
+    service: serviceSelect.value,
+    tier: selectedTierName,
+    timeline: timelineSelect.value,
+    addons: addons.map(a => ({ id: a.id, checked: a.el.checked })),
+    goal: projectGoal.value
+  };
+  try {
+    localStorage.setItem('omar_studio_pref', JSON.stringify(state));
+  } catch(e) {}
+}
+
+function loadPreferences() {
+  try {
+    const raw = localStorage.getItem('omar_studio_pref');
+    if (!raw) return;
+    const state = JSON.parse(raw);
+    if (state.cur && CURRENCIES[state.cur]) currentCurrency = state.cur;
+    if (state.lang) currentLang = state.lang;
+    if (state.service) serviceSelect.value = state.service;
+    if (state.timeline) timelineSelect.value = state.timeline;
+    if (state.goal) projectGoal.value = state.goal;
+
+    if (state.tier) {
+      selectedTierName = state.tier;
+      const pill = document.querySelector(`#tierGroup .tier-pill[data-tier="${state.tier}"]`);
+      if (pill) {
+        document.querySelectorAll('#tierGroup .tier-pill').forEach(p => p.classList.remove('selected'));
+        pill.classList.add('selected');
+        selectedTierMultiplier = parseFloat(pill.dataset.mult);
+      }
+    }
+
+    if (Array.isArray(state.addons)) {
+      state.addons.forEach(savedAd => {
+        const found = addons.find(a => a.id === savedAd.id);
+        if (found) found.el.checked = savedAd.checked;
+      });
+    }
+  } catch(e) {}
+}
+
+// Neural OS Background Animation Engine
+const neuralCanvas = document.getElementById('neural-bg');
+const neuralCtx = neuralCanvas.getContext('2d');
+let neuralWidth = 0, neuralHeight = 0;
+let neuralParticles = [];
+const neuralMouse = { x: null, y: null, radius: 140 };
+
+function resizeNeuralCanvas() {
+  const ratio = window.devicePixelRatio || 1;
+  neuralWidth = window.innerWidth;
+  neuralHeight = window.innerHeight;
+  neuralCanvas.width = neuralWidth * ratio;
+  neuralCanvas.height = neuralHeight * ratio;
+  neuralCanvas.style.width = neuralWidth + 'px';
+  neuralCanvas.style.height = neuralHeight + 'px';
+  neuralCtx.setTransform(ratio, 0, 0, ratio, 0, 0);
+
+  const count = neuralWidth < 700 ? 30 : Math.min(85, Math.floor((neuralWidth * neuralHeight) / 16000));
+  neuralParticles = Array.from({ length: count }, () => ({
+    x: Math.random() * neuralWidth,
+    y: Math.random() * neuralHeight,
+    vx: (Math.random() - 0.5) * 0.22,
+    vy: (Math.random() - 0.5) * 0.22,
+    size: Math.random() * 1.6 + 0.6,
+    color: Math.random() > 0.7 ? '#d8ff63' : '#78e4ea'
+  }));
+}
+
+function animateNeural() {
+  neuralCtx.clearRect(0, 0, neuralWidth, neuralHeight);
+
+  for (let i = 0; i < neuralParticles.length; i++) {
+    const p = neuralParticles[i];
+    p.x += p.vx;
+    p.y += p.vy;
+    if (p.x < 0 || p.x > neuralWidth) p.vx *= -1;
+    if (p.y < 0 || p.y > neuralHeight) p.vy *= -1;
+
+    if (neuralMouse.x !== null) {
+      const dx = neuralMouse.x - p.x;
+      const dy = neuralMouse.y - p.y;
+      const dist = Math.sqrt(dx * dx + dy * dy);
+      if (dist < neuralMouse.radius) {
+        p.x -= dx * 0.0006;
+        p.y -= dy * 0.0006;
+      }
+    }
+
+    neuralCtx.beginPath();
+    neuralCtx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+    neuralCtx.fillStyle = p.color;
+    neuralCtx.globalAlpha = 0.55;
+    neuralCtx.fill();
+
+    for (let j = i + 1; j < neuralParticles.length; j++) {
+      const p2 = neuralParticles[j];
+      const dx = p.x - p2.x;
+      const dy = p.y - p2.y;
+      const dist = Math.sqrt(dx * dx + dy * dy);
+      if (dist < 115) {
+        neuralCtx.beginPath();
+        neuralCtx.moveTo(p.x, p.y);
+        neuralCtx.lineTo(p2.x, p2.y);
+        neuralCtx.strokeStyle = 'rgba(216, 255, 99, ' + (1 - dist / 115) * 0.16 + ')';
+        neuralCtx.lineWidth = 0.5;
+        neuralCtx.stroke();
+      }
+    }
+  }
+
+  requestAnimationFrame(animateNeural);
+}
+
+window.addEventListener('resize', resizeNeuralCanvas);
+window.addEventListener('mousemove', (e) => {
+  neuralMouse.x = e.clientX;
+  neuralMouse.y = e.clientY;
+});
+window.addEventListener('mouseleave', () => {
+  neuralMouse.x = null;
+  neuralMouse.y = null;
+});
+
+// Initial Boot
+window.addEventListener('DOMContentLoaded', () => {
+  loadPreferences();
+  setLanguage(currentLang);
+  setCurrency(currentCurrency);
+  updateOfferCardPrices();
+  updateCalculations();
+
+  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    resizeNeuralCanvas();
+    animateNeural();
+  }
+});
+</script>
+</body>
+</html>
