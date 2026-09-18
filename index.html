@@ -1492,10 +1492,10 @@ footer.site-footer {
 
             <div style="display:grid; grid-template-columns: 1fr 1fr; gap:10px;">
               <button class="btn btn-outline" id="printQuoteBtn" style="font-size:12px; padding:10px;">
-                <span>📄 طباعة / تنزيل العرض (PDF)</span>
+                <span data-i18n="print_quote_btn">📄 طباعة / تنزيل العرض (PDF)</span>
               </button>
               <button class="btn btn-outline" id="calcOpenModalBtn" style="font-size:12px; padding:10px;">
-                <span>📅 حجز مكالمة 15 دقيقة</span>
+                <span data-i18n="hero_book_btn">📅 حجز مكالمة 15 دقيقة</span>
               </button>
             </div>
           </div>
@@ -2070,6 +2070,7 @@ const I18N = {
 
     // Work card micro-metrics
     zoom_hint: 'تكبير البوستر 🔍',
+    print_quote_btn: '📄 طباعة / تنزيل العرض (PDF)',
     w1_m1: 'زمن الاستجابة',
     w1_m2: 'تغذية بيانات حية',
     w1_m3: 'قيادة المعمارية',
@@ -2120,7 +2121,45 @@ const I18N = {
     print_term_1: 'الدفع على دفعتين: 50% دفعة بدء لتأكيد الحجز، و50% بعد مراجعة واعتماد الرابط التجريبي.',
     print_term_2: 'ملكية الكود المصدري والتصميم 100% للعميل مع تسليم مستودع GitHub وحسابات الاستضافة.',
     print_term_3: 'ضمان صيانة ودعم فني مجاني لمدة 30 يوماً من تاريخ الإطلاق الرسمي.',
-    print_term_4: 'للتواصل والاعتماد: واتساب 201156245502+ | بريد: omarahamed2010@gmail.com'
+    print_term_4: 'للتواصل والاعتماد: واتساب 201156245502+ | بريد: omarahamed2010@gmail.com',
+
+    // Offer / service cards
+    offer_1_title: 'صفحة هبوط عالية التحويل (Landing Page)',
+    offer_1_desc: 'صفحة مبيعات فائقة السرعة مصممة لتحويل الزوار إلى عملاء ومكالمات واتساب بنقرة واحدة.',
+    offer_1_f1: 'تصميم مخصص فخم يناسب هويتك',
+    offer_1_f2: 'سرعة تحميل أقل من ثانية وتوافق جوال 100%',
+    offer_1_f3: 'ربط زر واتساب ونموذج تواصل ذكي',
+    offer_1_f4: 'تسليم ونشر كامل خلال 7–10 أيام',
+    offer_2_title: 'موقع شركة أو براند متكامل',
+    offer_2_desc: 'بناء واجهة رقمية متكاملة متعددة الصفحات تبرز خدماتك، سابقة أعمالك، وتبني أقصى درجات الثقة.',
+    offer_2_f1: 'حتى 6 صفحات رئيسية (عنا، الخدمات، الأعمال، اتصل بنا)',
+    offer_2_f2: 'لوحة إدارة للمحتوى لتعديل النصوص والصور بسهولة',
+    offer_2_f3: 'تهيئة كاملة لمحركات البحث (SEO On-Page)',
+    offer_2_f4: 'دعم متعدد اللغات مع سرعة استجابة فائقة',
+    offer_3_title: 'لوحة تحكم وبوابة إدارة أعمال (Dashboard)',
+    offer_3_desc: 'وداعاً للشيتات المبعثرة. لوحة تحكم مخصصة لإدارة عملائك، المبيعات، والتقارير بصلاحيات دقيقة.',
+    offer_3_f1: 'نظام تسجيل دخول وصلاحيات للموظفين (Roles & Permissions)',
+    offer_3_f2: 'رسوم بيانية تفاعلية وتحليلات فورية للبيانات',
+    offer_3_f3: 'تصدير تقارير Excel و PDF بضغطة زر',
+    offer_3_f4: 'قاعدة بيانات سريعة وآمنة مشفرة',
+    offer_4_title: 'متجر إلكتروني متكامل (E-Commerce)',
+    offer_4_desc: 'متجر مبيعات سريع بتجربة شراء فائقة السلاسة مع بوابات دفع إلكتروني، وإدارة مخزون سهلة.',
+    offer_4_f1: 'سلة شراء وتسجيل سريع (One-Page Checkout)',
+    offer_4_f2: 'ربط بوابات دفع (Fawry, Paymob, Stripe, Moyasar)',
+    offer_4_f3: 'إشعارات آلية على واتساب عند كل طلب جديد',
+    offer_4_f4: 'إدارة مخزون وكوبونات خصم وتتبع الشحن',
+    offer_5_title: 'نموذج ذكاء اصطناعي وأتمتة (AI Prototype)',
+    offer_5_desc: 'تحويل فكرتك في الذكاء الاصطناعي إلى نموذج عملي وشغال يمكن اختباره وعرضه على المستثمرين في أسبوعين.',
+    offer_5_f1: 'ربط وتخصيص نماذج الذكاء الاصطناعي (Claude, GPT, Gemini)',
+    offer_5_f2: 'شات بوت ذكي أو أتمتة معالجة مستندات/بيانات',
+    offer_5_f3: 'واجهة استخدام أنيقة وسهلة لغير التقنيين',
+    offer_5_f4: 'تسليم الكود مع توثيق تقني وخطة توسع',
+    offer_6_title: 'فحص أمان وتسريع أداء (Audit & Speed)',
+    offer_6_desc: 'موقعك بطيء أو تقلق من الثغرات؟ فحص برمجي شامل يرفع سرعة الموقع ويسد الثغرات الأمنية مع تقرير مفصل.',
+    offer_6_f1: 'رفع سرعة الموقع إلى 90+ على مؤشرات Google Core Vitals',
+    offer_6_f2: 'فحص ثغرات الخادم وحقن الكود والأمان',
+    offer_6_f3: 'ضغط الوسائط وتفعيل التخزين المؤقت CDN',
+    offer_6_f4: 'تقرير مفصل قبل وبعد التعديل مع الضمان'
   },
   en: {
     nav_works: 'Live Works',
@@ -2278,6 +2317,7 @@ const I18N = {
 
     // Work card micro-metrics
     zoom_hint: 'Enlarge poster 🔍',
+    print_quote_btn: '📄 Print / Download Quote (PDF)',
     w1_m1: 'Response time',
     w1_m2: 'Live data feed',
     w1_m3: 'Architecture lead',
@@ -2328,7 +2368,45 @@ const I18N = {
     print_term_1: 'Payment in two installments: 50% upfront to confirm and reserve the schedule, 50% after reviewing and approving the staging link.',
     print_term_2: 'Full ownership (100%) of the source code and design, delivered via a GitHub repository plus hosting accounts.',
     print_term_3: 'Free 30-day maintenance and support warranty from the official launch date.',
-    print_term_4: 'To confirm or get in touch: WhatsApp +201156245502 | Email: omarahamed2010@gmail.com'
+    print_term_4: 'To confirm or get in touch: WhatsApp +201156245502 | Email: omarahamed2010@gmail.com',
+
+    // Offer / service cards
+    offer_1_title: 'High-Conversion Landing Page',
+    offer_1_desc: 'A blazing-fast sales page engineered to turn visitors into customers and one-click WhatsApp calls.',
+    offer_1_f1: 'Premium custom design matching your brand identity',
+    offer_1_f2: 'Under 1-second load time and 100% mobile compatibility',
+    offer_1_f3: 'WhatsApp button and smart contact form integration',
+    offer_1_f4: 'Full delivery and deployment within 7–10 days',
+    offer_2_title: 'Corporate or Full Brand Website',
+    offer_2_desc: 'A complete multi-page digital presence that showcases your services, portfolio, and builds maximum trust.',
+    offer_2_f1: 'Up to 6 core pages (About, Services, Work, Contact)',
+    offer_2_f2: 'Content management dashboard to edit text and images easily',
+    offer_2_f3: 'Full on-page SEO optimization',
+    offer_2_f4: 'Multi-language support with lightning-fast response times',
+    offer_3_title: 'Business Dashboard & Admin Portal',
+    offer_3_desc: 'Say goodbye to scattered spreadsheets. A custom dashboard to manage clients, sales, and reports with granular permissions.',
+    offer_3_f1: 'Staff login system with roles & permissions',
+    offer_3_f2: 'Interactive charts and real-time data analytics',
+    offer_3_f3: 'One-click Excel & PDF report exports',
+    offer_3_f4: 'Fast, secure, encrypted database',
+    offer_4_title: 'Full E-Commerce Store',
+    offer_4_desc: 'A fast sales store with a seamless checkout experience, online payment gateways, and easy inventory management.',
+    offer_4_f1: 'Shopping cart with one-page checkout',
+    offer_4_f2: 'Payment gateway integration (Fawry, Paymob, Stripe, Moyasar)',
+    offer_4_f3: 'Automatic WhatsApp notifications on every new order',
+    offer_4_f4: 'Inventory management, discount coupons, and shipment tracking',
+    offer_5_title: 'AI Prototype & Automation',
+    offer_5_desc: 'Turn your AI idea into a working prototype you can test and pitch to investors within two weeks.',
+    offer_5_f1: 'Integration and customization of AI models (Claude, GPT, Gemini)',
+    offer_5_f2: 'Smart chatbot or document/data-processing automation',
+    offer_5_f3: 'A clean, easy-to-use interface for non-technical users',
+    offer_5_f4: 'Code delivery with technical documentation and a scale-up plan',
+    offer_6_title: 'Security & Speed Audit',
+    offer_6_desc: 'Slow site or worried about vulnerabilities? A comprehensive audit that boosts your site\'s speed and closes security gaps, with a detailed report.',
+    offer_6_f1: 'Boost site speed to 90+ on Google Core Web Vitals',
+    offer_6_f2: 'Server vulnerability, code-injection, and security scanning',
+    offer_6_f3: 'Media compression and CDN caching setup',
+    offer_6_f4: 'Detailed before-and-after report with a warranty'
   }
 };
 
